@@ -1,0 +1,1 @@
+document.write("<hr><br> THIS IS A FOOTER");
