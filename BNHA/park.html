@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - park</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">park</div>
+        
+
+        <div class="info__channel-message-count">72 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 04:08 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia and her father having gotten used to living in Japan wanted to start their workout routine once again and the start of the day started with a run in the near by part. Xenia wearing a sports bra and boy shorts, showing just how muscular she really was, while her father in a tank top and shorts, even more muscular then her daughter showing off his tattoos. both running together it was a new park so they didn&#39;t really know a good path yet, today they would just be exploring the whole park to see if they could find a path they could run everyday. 
+
+It was around 9 in the morning when they decided to take a break in sit on a bench drinking some water.
+
+Tom speaking in English to Xenia. &quot;I think we....should push a little harder...&quot; talking between taking sips of his water bottle. &quot;Since its been so long since we ran&quot; Xenia nodded in agreement</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="LukiGuki#3977">@LukiGuki</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 04:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam has been living in Japan for a week now and recently found a new park to train in. So Sam decided to have a morning run before breakfast. Sam was wearing a tight jogging T-Shirt, black shorts and training bracelets on his ankles and wrists. As Sam runs he overhears a man speaking in English. Sam stops running and see that a man was speaking English to another person. Really excited to see other English speakers Sam started walking ove to the two people</em>
+&quot;Hey, sorry to interrupt you guys but are you by any chance from America?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 04:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 04:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Tom looked to the teen with a nod. &quot;We are in fact from America, I&#39;m guessing you are too? Oh sorry how rude. My name is Tom and this is my daughter Xenia&quot; who was currently downing a water bottle waved</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 05:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam smiles and goes for a handshake</em>
+&quot;My name&#39;s Sam, yeah I&#39;m also from America. Nice to meet you too&quot;
+<em>Sam looks an Xenia chugging her water</em>
+&quot;Are you out for a run&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 05:08 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Tom shakes his hand with a firm grip. &quot;Yea we been here for maybe a week and we decided it was time to get out and start up our workout routine again&quot; Xenia finally put the bottle down with a big gasp of hair. &quot;We only been running for a few hours and she&#39;s out of breath, so out of shape.&quot;
+Xenia glares at her father. &quot;Well excuse me for trying to get everything I need ready for school Mr, being able to keep up your exercise for the past week&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 05:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam chuckles</em>
+&quot;Well I&#39;ve been keeping up my exercise ever since I came to Japan. Did you guys move to Japan for your job or was it just that you were interested in Japan?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 05:17 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Well for my wife&#39;s job. I don&#39;t really work.&quot; Tom cleared up.
+
+&quot;And now I have to apparently take a huge test just to get into the high school I want&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 05:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Ah alright&quot;
+<em>Sam looks at Xenia</em>
+&quot;Oh what school are you applying for?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 05:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;UA, I learned that&#39;s it normal to apply to a high school here but to have to take an exam....that seems a bit much to me....but what do I know I&#39;m from America&quot; Xenia seemed kind of off put about it</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">20-May-19 05:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam puts his hand on the back of his head and smiles</em>
+&quot;Oh well I&#39;ve heard that U.A is the best hero highschool in Japan. I don&#39;t really understand the Japanese school system either but you know...&quot;
+<em>Sam looks at Tom</em>
+&quot;I&#39;ve been running for a while now and I haven&#39;t eaten any breakfast. If you two are done with your run would you like to have some breakfast somewhere?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">20-May-19 07:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Tom pulled out his own phone. &quot;I don&#39;t see why not but Maybe we should all go to our homes and take a shower other wise where ever we go might not want us to come in.&quot; Tom pointed out as both him and Xenia were just drenched in sweat.
+
+&quot;That sounds like a good idea.&quot;  Xenia said drinking more water.
+
+&quot;Alright Sam let&#39;s meet back here in an hour and we&#39;ll have breakfast with our new friend&quot; he smiled softly.&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 01:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam smiles</em>
+&quot;Alright sounds good, see you in an hour!&quot;
+<em>Sam starts to run back home to have a shower. Two nice Americans here in Japan, how nice</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 10:17 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">An hour later Xenia and her father showed up back at the park both wearing less revealing clothes as the sat on the bench and waited for Sam. 
+Xenia saw Sam walking down the path and waved him over</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 10:35 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam walked on the footpath wearing his regular clothes.  Sam saw Xenia and her father wave at Sam. Sam waved back and them and walked to the bench where they sat</em>
+&quot;Hey guys, so where should we eat?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 01:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 02:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;No idea still new around here&quot; Tom said with a shrug.
+
+&quot;Oh I know this decent sushi place we can go to.&quot; Xenia pointed out.
+
+&quot;Sure, how&#39;s that sound Sam?&quot; Tom asked</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 02:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="LukiGuki#3977">@LukiGuki</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 02:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam smiles</em>
+&quot;Oh I love sushi. Where about is the sushi restaurant?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 02:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Downtown near the old warehouses.&quot; Xenia tried to remember, &quot;I remember what it looks like but can&#39;t place the name&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 02:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam nods</em>
+&quot;Alright well I guess we&#39;ll just go downtown then&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 03:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Tom stood up. &quot;So we could walk there or take a cap I wouldn&#39;t mind walking myself&quot;
+
+&quot;I don&#39;t think so dad I want to be home before tomorrow it&#39;s not walking distance&quot; xeni a complained</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 03:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam chuckles a bit</em>
+&quot;Well we could take a cab if you guys want. I am also ready to walk if necessary&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 03:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Sounds like it&#39;ll be a cab&quot; Tom said as he started making his way to the street. &quot;Sam the meal will be on us this time so don&#39;t worry about it&quot;
+
+Xenia followed her father.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/237648106185949186/8b23aadace9f40723f3c2364a67b2ef5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="LukiGuki#3977" data-user-id="237648106185949186">LukiGuki</span>
+                <span class="chatlog__timestamp">21-May-19 03:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Sam follows both Xenia and Tom</em>
+&quot;Well if you insist, but you&#39;ll have to remember that I&#39;m going to pay for your meal later on in life&quot;
+<em>Sam has a satisfied smile on his face</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">21-May-19 04:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(moved to downtown2)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">23-May-19 10:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="pre pre--inline">Scene End | New Scene Begin</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">23-May-19 11:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki is talking on the phone in French, Karat is on a loose lead, but his harness is still on him due to service dog laws.</em>
+“You want me to do what?”
+<em>If someone had a strong hearing quirk, they may have been able to hear the other side</em>
+“I need some pictures of Karat! The people love you, and they love him!”
+<em>Ketsuki rolls her eyes</em>
+“Bernadette, you run an instagram account where you pretend to be me-“
+<em>the voice on the phone gets louder</em>
+“Hey! You have the password, it’s your account! I just edit all the pictures because you can’t! Besides-“
+<em>Ketsuki lets out a chirp</em>
+“If I take the picture of Karat will you leave me alone?”
+“Several in the park please! And try to aim well! Bye!”
+<em>Ketsuki turns to Karat, and switched to Japanese</em>
+“Okay, do something that looks cute, I guess... Bernadette’s 100 followers are depending on you.”
+<em>Her voice dripped with sarcasm during the last sentence</em>
+((Just a note Incase someone missed it: she was talking in French except at the end)</span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 11:10 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">23-May-19 11:14 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan was trying to take nap under a lovely oak tree, before being rudely awaken by some rather excitable French. To his disdain it was that rather mean bat girl from earlier.</em> With annoyance plastered on his face he called out in fluent-ish Japanese.
+“You mind keeping it down, I’m trying to sleep here.”
+
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">23-May-19 11:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi was on his way home after getting the last bit of supplies he needed for his start at, hopefully, UA when he saw a familiar bat girl talking to someone on the phone in French. As he was about to call out to her, he saw a boy laying by a tree call out to her, and while he couldn&#39;t exectly what he said through his accent, he got the gist that the boy wasn&#39;t exactly happy. Hayashi optes to approch without being noticed by either parties</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">23-May-19 11:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">23-May-19 11:32 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki recognized the voice, but wasn’t able to place it with any of the names that day. She shrugged it off, choosing instead to pretend she didn’t recognize him, hoping he didn’t remember who she was.</em>
+“I’m s-so very sorry.” <em>She stated, while bowing slightly in the general direction she heard the voice from.</em>
+<em>She took out her earbuds and placed one in her right ear, and navigated to the camera app. As Karat played, he also payed attention to the camera to make sure it was aimed at him. Ketsuki took several shots of Karat, hoping at least one would turn out good</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 11:36 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">23-May-19 11:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan was about to make a rather rude comment but stopped when he saw the blind trying and failing to take a picture of her dog(who was trying rather hard to stay in the shot). Sighing Jonathan reminded himself that helping people was part of being a hero.</em>
+“Need some help over there. It can’t be easy given your condition. 
+
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">23-May-19 11:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi gets close enough to see Katsuki trying to take a picture of Karat. He calls out to her right as Jonathan does the same</em> 
+&quot;Hey Kyu-san! need some help?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">23-May-19 11:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki is startled by the two voices, and also her name being mentioned. Her wings jolt into a fleeing position, causing the belt she was using to keep them from moving to break. She drops her phone as well</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">23-May-19 11:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan jumps back and slips into English upon seeing sudden wings.</em>
+&quot;Fucking Christ <em>Japanese</em> You sure get startled easy.&quot;
+<em>Jonathan picks her phone up and holds it towards her for a few seconds before realizing his mistake.</em>
+&quot;Uh....here&#39;s you&#39;re phone.&quot;
+
+
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">23-May-19 11:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi increases his pace when he sees Ketsuki startle. When he&#39;s closer he waits for Jonathan to talk before saying anything himself</em>
+&quot;Shit, sorry for scaring you Kyu-san&quot;
+<em>He looks at Jonathan</em>
+&quot;Oh, who&#39;s this?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 12:30 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 08:25 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki blushes</em>
+“Oh, hi Kanai-san.”
+<em>She turns toward where she heard Jonathan’s voice and accepts her phone.</em>
+“Thank you. And I’m very sorry, but I’ve um...”
+<em>She blushes more</em>
+“forgotten your name... Unless I’ve never met you before, your voice just sounds familiar...”
+<em>Karat had grabbed the broken belt, and is holding it in his mouth, waiting for Ketsuki to finish her conversation before he gives it to her.</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 08:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">24-May-19 11:11 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;No need to apologize, we only spoke for a few minutes.&quot; <em>turning to Hayashi</em>
+&quot;Hi I&#39;m Reali Jonathan, you can just call me Jonathan, I&#39;m still not too used to honorifics.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 11:40 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Kanai Hayashi. It’s nice to meet you.”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 02:14 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki is collecting her belt from Karat, and sighs once she realizes it is broken</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">24-May-19 02:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Likewise Kanai-San. Something wrong Kyu-San?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 02:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span> ((I saw you send some messages in another channel))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 02:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi looks and sees the broken belt. He looks at Jonathan</em> 
+“I think that has something to do with it.”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 02:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki continues holding on the belt, so she can dispose of it when she comes across a trash can.</em>
+“It’s nothing, really. I’ll just have to pay attention to what my wings are doing until I can get another one. Special material so it doesn’t damage my wings, but since wing quirks are so rare they’re a little difficult to obtain.”
+<em>As she was talking she began to blush, and her voice became quieter. Though she hates talking about herself, sometimes Ketsuki can’t help it</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="24-May-19 02:51 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">24-May-19 02:54 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Hmm sorry for startling you then, I bet wings are a bit hard to manage.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 03:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“So what were you guys doing in the park?”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 03:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>to Jonathan</em>
+“They are,”
+<em>to Hayashi</em>
+“I’m not sure about Jonathan, but I’m just here because Karat likes it.”
+<em>her voice begins to get a little quieter as she becomes uncomfortable at the amount of information she’s sharing</em>
+“My friend also wanted some cute pictures of Karat...”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">24-May-19 03:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I was napping under that Oak Tree, until someone rudely work me up.”
+<em>points towards a nice oak tree</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="24-May-19 03:42 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 03:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi narrows his eyes in confusion</em> 
+“...well if you guys aren’t doing anything do y’all want to get something to eat?”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 04:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((So based on what Puns said, I think this happened a little after the mall meetup))
+<em>Ketsuki looks to the ground, despite the fact that she can’t see</em>
+“Well, we did have bubble tea earlier so I don’t really need anything. I do have to get these pictures of Karat done, though.”
+<em>Her voice is barely audible at this point, and she is internally screaming at the situation she’s put herself in.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">24-May-19 04:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;As much fun as that sounds im gonna go back and finish my damn nap. Both of us can&#39;t help her take pictures of her dog now can we.&quot;
+<em>Jonathan waves a quick wave and returns to his tree.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="24-May-19 04:32 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="24-May-19 04:32 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">24-May-19 04:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Ok. I gotta get home then. See you later.”
+<em>hayashi walks away from the park</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">24-May-19 05:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki smiles gently</em>
+“Bye, Kanai-san!”
+<em>she turns to Karat</em>
+“Alright, lets hope one of these pictures is good enough for Bernadette.”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="pre pre--inline">Scene End</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

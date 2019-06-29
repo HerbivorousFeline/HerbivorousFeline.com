@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - yaavin-animate-dep-store</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">yaavin-animate-dep-store</div>
+        
+
+        <div class="info__channel-message-count">25 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">25-May-19 05:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/581959328718782485/581960665133219891/Ikebukuro-honten.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/581959328718782485/581960665133219891/Ikebukuro-honten.jpg" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Pinned a message.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">04-Jun-19 07:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya is shopping around the male character floor.  She was looking for some buttons and keychains for her ita bag.  Along with those she had Poteusa Roppy stuff, some mangas, and random misc, stuff</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 01:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">While Xenia had found a store to find her manga and comics that didn&#39;t stop her from looking at other stores to see their stock just in case they had something the other place didn&#39;t as she was looking around she spotted Aya in the manga section.
+&quot;Oh hello ummm Aya was it. I honestly didn&#39;t peg you as a manga reader&quot; Xenia spoke in English as she took the chance to when ever she could. A dumb smile on her face as she found another manga reader a cute one at that.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 06:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya was bobbing her head to the music coming from her buds but, noticed a female walk up to her.  She turned to face the somewhat familiar face.  While popping one bud out she responded</em>
+&quot;Hi.&quot;
+<em>She looked down at what was in her hand basket.  It had more violent, gorey type manga with a few...um....yaoi (lol)</em>
+&quot;Yea.  Something to do.  I prefer to read rather than sit in front of an idiot box.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 07:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I love manga and comics and books but the first two mainly.&quot; 
+Xenia said a little excitedly. following her gaze down to what she had.
+&quot;Oh those are some good one&#39;s....well I don&#39;t know about the Yaoi i&#39;m more of a yuri kind of girl. but still some good picks&quot; 
+Xenia started going through what they had as she continued to talk.
+&quot;Based on your selection you have know I could only assume and hope that you&#39;ve read Berserk right?&quot;
+
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya blushed a little when Xenia mentioned the yaois she had grabbed</em>
+&quot;Oh, yea I&#39;ve read some Yuri myself...&quot;
+<em>she&#39;d continue being red and turn back to looking at the mangas on the shelves</em>
+&quot; Of course.  I really like Guts.  I alwasy thought the struggle he went through for Casca trying to save her was....&quot;
+<em>she&#39;d stop talking and go back to being quiet.  She felt she was being too open.</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia noted the stop as she looked to her side at Aya having picked up a manga of the most recent maid dragon manga.
+&quot;Was?&quot; she tried to get Aya to continue her thought on the matter.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;It&#39;s not important.  I do prefer the gorey stuff though.  Romance is overrated.&quot;
+<em>she would squat down to look at lower shelves trying to find some of the more esoteric type</em>
+&quot;Everyone wants to read a happy ending but it isn&#39;t realistic.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I think that&#39;s why they want to read it cause it&#39;s not something everyone can have so why not read about something that can&#39;t happen?&quot; Xenia picked up another book though she tried to hide was it was.
+&quot;I mean that&#39;s why a lot of people read books, watch shows or movies, or play games, to get something they can&#39;t get in life what&#39;s wrong with that. not everything has to be realistic I mean what you read isn&#39;t exactly realistic just gory and honestly a tad edgy. though that&#39;s not bad.&quot;
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;The nice cute girls always get the guy...&quot;
+<em>she replied in her monotone voice but it had a hint of irritation</em>
+&quot;The edgy girl gets left behind.  We&#39;re the ones they want to experience but not be serious with.&quot;
+<em>The topic kind of nudged her the wrong way.  She stood up sighing heavily before heading towards the stairs that lead to the next level.</em>
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="05-Jun-19 08:56 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 08:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">that comment hit Xenia a little harder then she expected but it didn&#39;t surprise her all that much at the same time she understood it having all the scars on her body she worked hard to keep a positive attitude about it and honestly from time to time she broke thinking she was to ugly for anyone.
+&quot;While that is common, I think you&#39;ve been reading the wrong stuff. I would love to be with the kind of girl you are&quot; she said as Aya left.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:10 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya heard what Xenia said as she was walking away but made it seem like she didn&#39;t.  She definitely wasn&#39;t used to tall the attention she had been getting lately.  She continued walking around collecting things to buy.  After about 30 minutes she finally goes to the bottom floor to check out.</em>
+&quot;Guess I&#39;ll go drop this stuff off at home.  Damn, I need water.&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:13 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia had been browsing the manga a tad more before making her way out. she had collected a for more recent additions to her collection of manga there were no comics so that was a little sad. she made her way to the check out and waited in line.
+Xenia wasn&#39;t really paying attention as she was more or less just looking through her bag to make sure she had everything she wanted when she looked up and saw a familiar face.
+A big smile as she waved. 
+&quot;Oh hello again Aya.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:27 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya finished checking out then turned around seeing Xenia.  She nodded to her as a confirmation.  Her hand were full with bags of merch.  When she got outside she went to the vending machine.</em>
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia worried as she didn&#39;t answer, trying to hurry with her check out as she tried to hurry up out the store to catch Aya at the vending machine. 
+&quot;I hope something I said didn&#39;t upset you. Cause I get where your coming from, I understand at least a little bit about that pain While I do like reading these.&quot; 
+She pulled out one of her manga&#39;s to show it to Aya.
+&quot;They tend to be these pretty almost perfect girls, not girls like me. with all my scars. but that&#39;s something I can&#39;t have that&#39;s why I read it. I don&#39;t feel anyone can like me cause of my scars. so I read these just to get that feeling of what it would be like to have smooth and beautiful skin.&quot; 
+Xenia placed her manga back into her bag.
+&quot;I really hope I didn&#39;t upset you that was not my intent and sorry if I did.&quot;
+Xenia waited to see if Aya would say anything.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya would pop a bud out of her ear</em>
+&quot;You didn&#39;t.  When I was talking about Guts and Casca earlier and I stopped...him doing everything he can from losing her..that&#39;s why I read it.  Not just the gore.&quot;
+<em>The bottle would dispense.  Aya would bend down to grab it along with her bags that she had to put down.</em>
+&quot;We all have fantasies.  Sometimes I imagine not having my quirk and imagine I would be happier.&quot;
+<em>She would turn to start walking in the direction to her house</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia tilted her head at that thankfully she didn&#39;t upset her but something else did intrigued her at the same time she didn&#39;t want to follow her home as that seemed rude.
+&quot;I love your quirk what little I know about it at least. I can&#39;t pretend to know the in and out&#39;s of it but it seemed like a really good one. At least your&#39;s is beautiful and not blood ridden like mine.&quot;
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>She&#39;d stop briefly.</em>
+&quot;Until you hurt people you don&#39;t mean to, then people are afraid of you or to get close to you.&quot;
+<em>She&#39;d continue walking</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 09:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">She didn&#39;t talk as loudly this time Aya might not hear it as Xenia spoke.
+&quot;Pain is something i&#39;m quite used to.&quot; she leaned against the wall and slowly sunk to the ground her bag to her side, she wasn&#39;t sad just in thought as she rested her head on her knees.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

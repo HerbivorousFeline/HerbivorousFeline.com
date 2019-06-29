@@ -1,0 +1,3112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - timora-mall</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">timora-mall</div>
+        
+
+        <div class="info__channel-message-count">165 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya walks into the mall, with water in hand and buds in ears.  If someone tried speaking to her she wouldn&#39;t hear it at all over the obnoxiously loud psychobilly music.  She walked up to the directory and tried her best to read what she could, then pulled her phone out to use a translator.  There was so much to look at and read that it was kinda overwhelming for her.</em>
+&quot;Come on....&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi stood in front of the beat saber machine in the Timora mall, intent to relax a little. He slid his game card through the machine’s scanner, put on the headset, and selected the expert difficulty on Legends and began to cut through the digital blocks.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 07:57 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan walked into the mall and began heading towards the arcade inorder to destroy Hayashi&#39;s scores when he saw a girl struggling to read the directory, as he approached a wave of drowsiness hit him, however he went beyond because he had to slay Second Place.</em>
+&quot;Need some help?”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Today she was wearing a torn up mighty mighty bosstones shirt with safety pins all over, super skinny black and white star patterned pants with frays and holes, and black and white chick taylors. (I like descriptives.  Lol)  She nodded but it wasn&#39;t in response to Jonathan because she couldn&#39;t hear him.  It was her nodding to the music.  She would sigh heavily then down her bottle of water.</em>  
+&quot;Aw man.  Might as well just start walking and just hope for the best.  Besides I need more water....&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((how is your coop higher than mine?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((She doesn’t insult everyone she meets))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 07:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((....can&#39;t argue with that))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:02 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((she can&#39;t hear him XD))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((also she just met ya so))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((for now, this ship will sail))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi finishes off the song with a near perfect score when he heard Jonathan behind him. He takes off the head set and looks around, spotting Jonathan at the entrance</em>
+<em>In his head: “oh great, this joker.”</em>
+<em>Hayashi puts the head set back on and selects a new song, praying to whatever higher being above that Jonathan hasn’t spotted him.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 08:15 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((dipshit I&#39;m still at the entrance))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:08 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Learn to read, people /s))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Official explanation: Hayashi is hallucinating. Or if he wants someone to be there I can pop in with Ketsuki. Y’all’s choice))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((playing video games with a blind girl is kinda cruel))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((She kicked Sam’s ass at DDR))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((how?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Move to <span class="mention">#rp-general-chat</span> ))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((you dick))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( <img class="emoji " alt="👉" title="👉" src="https://twemoji.maxcdn.com/2/72x72/1f449.png" /><img class="emoji " alt="🏻" title="🏻" src="https://twemoji.maxcdn.com/2/72x72/1f3fb.png" /><img class="emoji " alt="👉" title="👉" src="https://twemoji.maxcdn.com/2/72x72/1f449.png" /><img class="emoji " alt="🏻" title="🏻" src="https://twemoji.maxcdn.com/2/72x72/1f3fb.png" /> ))</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 08:19 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan taps Aya&#39;s shoulder not realizing it&#39;s the scary American girl that doesn&#39;t like touching</em>
+&quot;Sorry, i couldn&#39;t help but overhear your predicament, i could give you directions if you&#39;d like.&quot;
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 08:28 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Just like with the girl who tapped her, her spines come out outlining where his hand was.  Making holes in her shirt.  This was honestly why so many of her clothes were ripped up.  She&#39;d pop the earbud out and turn to look behind her.</em>  
+&quot;Sleepy boy...&quot;
+<em>Her spines would retract.  She would sigh looking at the holes she just made in her shirt and start taking some safety pins out from her pockets to hold the holes back together.</em>
+&quot;If you said anything I couldn&#39;t hear you.  While you&#39;re here though, where is the arcade here?  I am craving some fighting games and need to get a territory no matter how many guys i have to make go home crying.&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:00 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I LIVE!!))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:00 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((IT’S ALIVE))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi finishes his second song with another near perfect score. Figuring he should switch it up a little, he looks around and spots a street fighter machine. He walks over to the machine and moves to swipe his card</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 09:03 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan quickly withdrew his hand recognizing the girl.</em>
+&quot;Sorry about that. It&#39;s Aya right? I can show you the arcade I&#39;m actually on my way there now, follow me.&quot;
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 09:22 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>she thought to herself &quot;he remembered my name?&quot;  She was kind of surprised. Her pale skin flushed a little then she shook it off.</em>
+&quot;Yea, that&#39;s my name.  Uhh sure...&quot;
+<em>She responded in her monotone-like voice.  She let him go ahead and followed behind him.  She started motioning her hands as if she was actually at an arcade machine practice her combos.  It was a strange thing to watch but she looked like she knew what she was doing.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 09:29 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi swipes his card through the scanner and takes the controls. He goes into single player and selected Ryu as his fighter</em>
+<em>In his head: “Alright. Let’s kick some ass”</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Ryu how cliche))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((And boring))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Fuck off ryu is a classic))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Ken is much better))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Just take your turn))</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 09:52 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 09:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Fine))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan led Aya through the mall as she played a phantom machine. They arrived at the arcade and Jonathan turned to address Aya.</em>
+“Here we are sorry again about the shirt.” 
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:01 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>As she walked into the arcade her eyes glowed.  A sight rarely seen out of her.  Her heart raced since she hadn&#39;t been in large arcades since the ones in America aren&#39;t very big.  She turned and look at Jonathan and a small smirk in the corner of her mouth could be seen.</em>
+&quot;It happens on the reg.  It&#39;s why my clothes are this way.&quot;
+<em>She&#39;d pull out a coin purse, that she purchased when she got to Japan since it was something the general population had, and start counting her yen.</em>
+&quot;Well I should be entertained for some hours...Now where is the King of Fighters XVI machine..?&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 10:02 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:13 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi loses 3/4ths of the way through single player and sighs in defeat. He moves away and turns, only to see that Jonathan, and a girl whom he doesn’t know, enter the arcade. Hayashi sighs and begins looking for another game to play, hoping again that he isn’t spotted. His eyes land on a an Alien ((the movie)) themed shooter game and walks up to it.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Please spot him))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:14 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Oh ho ho now you want me to spot him is that it))</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 10:14 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<em>Hayashi</em> didn’t want to be spotted. I, on the other hand, enjoy making my OC suffer. His backstory is a testament to this))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((You’re a sadist))</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 10:16 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((UwU))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🛑" title="🛑" src="https://twemoji.maxcdn.com/2/72x72/1f6d1.png" />
+                                    <span class="chatlog__reaction-count">2</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((...))
+<em>Jonathan saw Hayashi from the corner of his eye but chose not to approach him, not wanting to fight with Second Place today. He turned to Aya and pointed towards the fighting games.</em> 
+“Mind if I join you? I love that game.”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>She looked over a bit surprised.</em>
+&quot;Uh...sure.  Don&#39;t think I&#39;m an easy win cause I&#39;m a girl though.&quot;
+<em>Aya had been playing the King of fighter series for a long time.  She played from &#39;99 up and wouldn&#39;t get the next one until she beat it and unlocked all possible endings and characters.  She was this way with a few other games too.  She would follow Jonathan to the machines and was excited deep down.</em>
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 10:26 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:27 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi continues playing his game</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>The pair walked over to the machine, Jonathan swiped his card and selected PvP.</em>
+“You’re going down” <em>Jonathan said as he selected his character, Shun’ Ei.</em>
+((You wanna roll to see who wins.))
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 10:36 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:37 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((no lie, kinda scared lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((You should be Shun’ Ei has a unique play style that can be hard to counter. Mwahahaha))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Plus he’s the only character with 2 air dashes))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya sat down and ignored what he said so that she wouldn&#39;t come off cocky.  Putting some yen in, She&#39;d go through and stop at Joe Higashi...then as the timer got down she&#39;d quickly move over to Geese.  Sighing heavily to herself hoping she would beat him</em>
+&quot;Here we go!&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((So you wanna roll, I can’t think of anyway we can do this narratively))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((sure))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Probably technique, speed, and int right))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I doubt coop and power would be factors))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((What do you suggest we roll then?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi finishes his game and turns around to watch the two play, hoping to see spark plug lose</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan is defeated by Aya. In the beginning it seemed they were fairly close in skill, but as the game progressed it was clear who had the upper hand.</em>
+“Well you weren’t kidding about being good. Well played Aya.”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya sighs almost as if she had been holding her breath the whole match.  Her head tilted to the side looking past the side of the machine.  She&#39;d have a small smirk in that same corner of her mouth as before</em>
+&quot;That wasa good game.&quot; *She replied.
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi chuckles((A little too loudly <img class="emoji " alt="😉" title="😉" src="https://twemoji.maxcdn.com/2/72x72/1f609.png" /> )), satisfied with the outcome of the match. He walks back over to the beat saber machine, figuring he&#39;d play a few more times before leaving</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan heard Hayashi chuckling and got a scowl on his face. He turned to face Aya.</em>
+“Thanks for the good game Aya, but I gotta go kick his ass. See you around.”
+<em>Jonathan walked over towards Hayashi.</em>
+“Something funny Second Place?”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Looking over Jonathan&#39;s shoulder seeing a guy chuckling her smirk would lower.  She didn&#39;t find it as something to laugh about since guys seem to think girls aren&#39;t as good at video games.  She would stand up at the same time Jonathan did and was going to speak but Jonathan spoke beforehand.  Watching him walk away she looked down at the machine thinking that it was kind of nice to play with someone on a &#39;friendly level&#39;</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:40 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi looked back at Jonathan and turned around to face him and talks in English</em>
+&quot;Oh hey there spark plug. I was just thinking of a joke I heard earlier. You need something?&quot;
+<em>Hayashi finishes with a shit-eating grin</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan responded in English</em>
+“Thinking? Isn’t that a bit advanced for you?”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya would sit back down and continue playing the AI waiting for someone to play against her.  Every so often she would peer over at the two arguing.</em>
+&quot;They must not like each other much...&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I gotta go to bed so I can adult tomorrow ugh))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Good night))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( <s>sleep is for the weak</s> Night))</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 11:49 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<s>Weak*</s>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Thanks))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Ah yes a classic ‘you’re stupid’ insult”
+<em>Hayashi begins quietly clapping</em>
+“Very original.”</span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 11:51 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Says the one who plays as Ryu))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Shut))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I would’ve been original but I didn’t want a clich&#232; side character like you feel bad”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="02-Jun-19 11:57 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((My god he is literally Bakugo))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((No, he didn’t yell bastard or explode))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:23 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya would continue playing the KOF game for a little bit but, kinda get bored and go look for some of the ufo crane games</em>
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:33 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi opens his mouth to retort but stops and sighs. He pinches the bridge of his nose</em>
+“Look. We got off in the wrong foot in the hospital.”
+<em>Hayashi looks at Jonathan</em>
+“I apologize for whatever I did to piss you off originally, and I apologize for chuckling just now.”
+<em>Hayashi offers a hand</em>
+“Can we start over? Please?”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:14 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:17 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<em>Jon proceeds to shiv Hayashi and laughs maniacally</em>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:17 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Not a bad idea))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I fucking dare you))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:48 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((You’re lucky I left my knife at home))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan was shocked he didn’t see that coming.</em>
+“Sure.”
+<em>Jonathan shook Hayashi’s hand.</em>
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:08 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Good man))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:45 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<em>then a wrist blade extends, Assassin&#39;s Creed style. Hayashi never saw it coming. Hard cut to title card of Jon&#39;s villain origin movie</em>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:46 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Can I change my turn? I like Kampy‘s better))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 12:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Pls no))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 12:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<em>stab</em>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 12:28 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((“Shit”))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 01:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya found a ufo crane game that had cute poteusa roppy bunny plushies.  She started playing the kind where the plushy sits atop two bars and you have to maneuver the plushie between then usually having to push them through but, it was giving her a hard time</em>
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 01:16 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi smiles slightly and let’s go of Jonathan’s hand</em>
+“Now if you still want to ‘kick my ass,’ I was going to play a few round of beat saber. Your welcome to try and beat me” <em>Hayashi says with a smirk</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 03:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan gained a mischievous smirk.</em>
+“I could beat you any day Second Place.”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 03:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>kept trying probably like 5 times to get the bun but no success.  Her eyes would shift every once in a while to look at the two guys now being more pleasant with one another.  She really wanted that plushy</em>
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 04:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi turns to walk to the machine, but spots Aya struggling with the claw game. He turns to Jonathan</em>
+“You came here with her right?”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 04:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan turns to look</em>
+“Yeah, actually I’ll be right back.”
+<em>Jonathan walks over to Aya.</em>
+“May I help, as a prize for kicking my ass at KOF?”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 06:23 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya kept trying to get the plush but gave up after a few more tries.  She saw Jonathan and the others guys reflections in the glass.  She turned to face Jon while pulling an earplug out.</em> 
+&quot;Man I&#39;ve played these on my phone remotely but this ones kinda tough.&quot;
+<em>Her face had disappointment in it.  As soon as he offered to help she would blush a little and turn away quickly hoping he didn&#39;t notice</em>
+&quot;Uh...yea I guess if you want.....&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 06:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi watches the scene in front of him, a small smirk slowly spreading across his face</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 07:00 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( you didn&#39;t tag))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 07:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan realizing he was awful at crane machines had a devilish idea. Jonathan looked to see if anyone or a camera was watching, and seeing no one he extended his wires up the toy slot and pulled the rabbit out. He handed the rabbit to Aya and made a put a finger over his lips.</em>
+“There ya go.”
+
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 07:32 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya smiled watching him get the bunny out for her.  She didn&#39;t care about laws and did plenty of illegal things herself.  Guys usually weren&#39;t too nice to her and she wasn&#39;t sure what to think.</em>
+&quot;Th-thank you...&quot; 
+<em>She said as he handed it to her</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 07:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi continues smirking until Jonathan walks over and continues talking in English</em>
+“You ready spark plug?”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:01 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">*Jonathan waves a quick bye to Aya before facing Hayashi^
+“Ready to kick your ass Second String.”
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya checked her phone to see the time and realised she hadn&#39;t ate for a while.  As she left the arcade she&#39;d lookover at the two concentrated on beating each other.</em>
+&quot;Guess I&#39;ll go see what they have for food here...&quot;
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi put on his head set and picked up the controllers.</em>
+“I got dibs on the first song”
+<em>Hayashi selects Legends on expert and waits for Jonathan to say he’s ready</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((So we playing at the same time?))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan put on his headset grabs the controllers</em>
+“Ready Second Place?”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((i guess Aya leaves))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((she gone get her some foodz))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((With rabbit plush in hand?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((yes))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 08:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((One step closer))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:27 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I was born ready wire tip”
+<em>Hayashi selects start and readies himself</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((To bot commands))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:28 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Such rude bois))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Not rude))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Just competitive))</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 09:30 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 09:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>The game starts and the competitors start slashing at the digital blocks. The they rivals can’t see the others screen, it’s obvious from anyone watching that Jonathan has the distinct advantage, out matching Hayashi in speed and accuracy. The song ends and the boys take off their head sets to see that Jonathan has beaten Hayashi, having nearly double his score</em>
+“Fucking shit dude. You killed me”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan gains a smirk when he see’s their scores.</em>
+“Haha, you got thrashed Second Place. Once again I shine ahead.”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi turns to Jonathan</em>
+“Oh this isn’t over spark plug. I still got an hour or too before I gotta head home. We’re not done yet pick the next song.”</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 10:07 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:11 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan gives a small chuckle</em>
+“Your funeral.”
+<em>Jonathan selects Reality Check Through The Skull on expert difficulty</em>
+<em>Devious grin</em>
+“Ya ready?”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Let’s roll))</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 10:12 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi focused intently on the game and did rather well(for this hellish song). He excitedly looked to the scores to he his 598,980. Then he saw Jonathan’s score of 823,750.</em>
+ “Fuck that song is hell.” 
+<em>Jonathan exclaimed after sighing.</em> 
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:32 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Jesus. I though I was good but hot damn are you better.”
+<em>Hayashi thinks to himself for a minute.</em>
+“There’s one more song I want to do, but you have to promise not to laugh.”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I can’t promise that.”
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:37 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>In his head: “welp this it”
+Hayashi scrolls to the bonus songs at the end of the selection menu and hesitates before selecting POP/STARS and selects expert. Without another word he puts in his head set and waits</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/244281999659892736/e86ed456d7a8b51cb975f4a5cbd0e464.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sanidine#2761" data-user-id="244281999659892736">Sanidine</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((sorry to intrude but hell yeah pop/stars))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan snickers to himself before putting on his headset</em>
+“Ready to get thrashed again?”
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 10:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I wanna come back with a witty remark but with how these matches have been going i think I’ve lost the right too.” 
+<em>Hayashi selects start</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi puts all he can into matching the arrows on the blocks, doing better than he did then the first two songs. Despite his efforts, however, when he takes off his head set, Jonathan’s 816,362 out matches his 634,562. Hayashi sighs before hanging his head in defeat.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="RealiGoodPuns#7831">@RealiGoodPuns</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Ya played well, 600,000 ain’t a score to scoff at”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi smiles</em>
+“Thanks man. And I wanna apologize, I had the wrong opinion of you. You’re actually a pretty chill guy.”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“And I suppose I shouldn’t have called you useless, I was wrong.” <em>to point it out, he thought.</em>
+<span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span> 
+((Damn we change opinions of each other waaay to often))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Lol))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi checks his watch.</em>
+“I was gonna stick around her for a little longer than get some food in one of the nearby shops. After we finish trying to beat each other, you want to join me?”</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 11:27 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:28 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“You mean you try to beat me, while I destroy all your scores.”</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 11:29 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Hayashi chuckles</em>
+“Sure spark plug. Sure”</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:37 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Jonathan and Hayashi spent another half hour playing. Each game was the same, Hayashi plays furiously while Jonathan beats him rather nonchalantly. Until they came across Dance Dance Revolution, at first Jonathan kept up with most American songs. However, when they got to Pop Songs Hayashi flawlessed each one, all whilst singing along, and ending with  an idol pose. Jonathan was dying from laughter as he secretly recorded. Eventually after Hayashi tired of losing the two left the arcade and ate at a local ramen restaurant before heading home.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Blasty McSplody#1235">@Blasty McSplody</span> ((I think I did quite well))</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 11:37 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:40 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I’m dying. I’m accepting this head canon))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((JonYashi is cute.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/342685384175779840/b1b26a35658c34958f6e36bc80b2a4ac.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="RealiGoodPuns#7831" data-user-id="342685384175779840">RealiGoodPuns</span>
+                <span class="chatlog__timestamp">03-Jun-19 11:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Can you don’t))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">04-Jun-19 01:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya would frequent the arcade days after.  Occasionally visiting other ones but mainly the timora one.  Of course she played her fighting games mainly guilty gear and KOF beating others to gain reputation.</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">04-Jun-19 01:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(End scene)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">04-Jun-19 01:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((now where to, lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">04-Jun-19 01:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Idk if you want to start a new rp with someone else just pop a message in to <span class="mention">#find-an-rp</span> and wait for someone to respond))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

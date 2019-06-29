@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - rp-information</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">rp-information</div>
+        
+
+        <div class="info__channel-message-count">10 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">25-Mar-19 08:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">The MHA OC Discord / subreddit RP is designed to allow users to creatively design their OC and then participate within the world of Heroes with other players. 
+------------------------------------------------------
+
+<strong>The Setting</strong>
+
+What does it take to be a hero? UA has seen many individuals pass through it&#39;s doors. Whether they commute from home or stay in the on campus dorms, UA strives to create the best heroes for a better tomorrow. And this Alternate Universe will need it. Without individuals like All Might, Midoriya, and their contemporaries, the world needs symbols of peace to stand against the villains and organized crime.</span>
+
+                                <span class="chatlog__edited-timestamp" title="12-May-19 04:15 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">------------------------------------------------------
+
+<strong>Designing an OC and Mod Approval</strong>
+
+Please follow: 
+- The design template can be found on the MHA OC reddit. As much of it as possible should be filled out. <a href="https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc">https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc</a>
+- Your OC must first be submitted to the MHA OC reddit. 
+- Then, copy a link to your proposed OC’s character sheet to the “RP OC Proposal” channel of RP General. 
+- A mod may ask you for additional information or questions. If this occurs, you will be assigned the &quot;OC Under Review&quot; role. These discussions should take place in the &quot;submission-discussion&quot; section of RP General. 
+- Once your proposed OC is approved by a mod, you will be able to access the RP section of the Discord. 
+------------------------------------------------------
+
+<strong>RP Style</strong>
+
+We prefer a narrative style of Role Playing. Please use correct punctuation, spelling, and an appropriate level of description and narration. Also, please tag the next player, if any, at the end of your post.
+------------------------------------------------------</span>
+
+                                <span class="chatlog__edited-timestamp" title="29-Apr-19 08:21 PM">(edited)</span>
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,255,255,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc"><span class="markdown">reddit: the front page of the internet</span></a>
+                                            </div>
+
+                                        <div class="chatlog__embed-description"><span class="markdown">r/BNHA_OC_Characters: Original Characters created by you, or found on the internet, inspired by Boku No Hero Academia/My Hero Academia. 
+
+Please read the FAQ before posting anything.</span></div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">25-Mar-19 08:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><strong>Ratings</strong>
+
+On the OC template there is a section at the end for “Ratings”. Character ratings should be used more as a basic guideline during Role Playing. However, if something is more narratively interesting and the other players agree, the Ratings can be worked around to fulfill a desired result. Each player can assign up to 15 points in total to their Ratings at first.
+
+<em>The Ratings are as follows:</em>
+
+<em>Power</em> – Raw Quirk power and/or Physical strength
+<em>Speed</em> – Physical speed and/or reaction speed
+<em>Technique</em> – Versatility of quirk use, quirk control and combat knowledge
+<em>Intelligence</em> - perception, knowledge, wisdom, creativity
+<em>Cooperativeness</em> - charisma, insight, sociability
+------------------------------------------------------------------------------------------------------------------------------</span>
+
+                                <span class="chatlog__edited-timestamp" title="27-Mar-19 09:22 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><strong>Dice Pool</strong>
+
+Ratings can be utilized through a “Dice Pool”. A player’s Dice Pool starts at D4 (4 sided dice). When a rolling, such as during a competition of strength against an opponent, attempting to determine an opponent’s intentions, etc, the user will utilize a number of dice equal to their Rating. So, if they are attempting to arm wrestle an opponent, both players roll the number of dice equal to their Power Rating. Whosever number is higher wins and can determine the narrative outcome. Preferably the dice will be utilize sparingly and both players can agree on a narrative direction.This is optional and should be utilized when both players agree to roll. When you wish to roll, please use the following (! 1d4).
+
+Example: I am punching an opponent. My Power  is 4. I roll 4d4. My results is 12. My opponent’s Power is 3 and they attempt to block. They roll 3d4 and their result is 9. My roll is higher, so my attack works.</span>
+
+                                <span class="chatlog__edited-timestamp" title="26-Mar-19 10:43 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">By completing events or utilizing designated “Character Improvement” threads, which will occur every so often, players can increase their Rating scores and increase the type of dice utilize for rolls, gaining dice with more sides. These rewards are at the discretion of the mods and will be rewarded for creativity, well written character development, or other special events. 5 is the maximum and 1 is the minimum number a player can have in any one Rating. There will be exceptions or special circumstances, but they will be rare. Only those without quirks can have a 0 in a Rating.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">26-Mar-19 09:03 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">------------------------------------------------------------------------------------------------------------------------
+<strong>Dicebot</strong>
+
+Dicebot is our local dice rolling bot. By using the following syntax, you can roll dice in any public channel. If you need to roll in a private or locked channel, please use Dicebot&#39;s in the RP General channel.
+Dicebot is a good boi. Please do not abuse him.</span>
+
+                                <span class="chatlog__edited-timestamp" title="27-Mar-19 09:22 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Syntax: ! 1d6</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">27-Mar-19 09:21 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">-------------------------------------------------------------------------------------------------------------------
+<strong>FAQ</strong>
+
+1) Do I have to use the template from the Reddit for my OC RP submission?
+- Yes. We prefer you fill out our template to the best of your abilities.
+
+2) Can I use a character for RP in a higher grade than year one?
+ - Nope. All newly accepted RP submissions will start as year 1, with a rating total of 15, and with their Dice Pool at d4. There will be chances to increase the size of dice and, on rare occasions, rating numbers. 
+
+3)  How will I know when events are going to occur?
+- We will let you know a week or so in advanced. In addition, there will be a calendar of events you can check in the future.</span>
+
+                                <span class="chatlog__edited-timestamp" title="28-Mar-19 04:28 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">22-Apr-19 08:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">4) Are there some Quirks which will be scrutinized harder than others?
+- Yes. Quirks such as the following have the potential to be game breaking and as such will be more heavily scrutinized and in some cases, rejected:
++Wide array of varied effects, elemental components, or read like multiple quirks
++Effects that can manipulate another player (such as mind control, body control, or quirk control)
++Time travel or manipulation
++Zero point energy manipulation
++Creation of matter from nothing.</span>
+
+                                <span class="chatlog__edited-timestamp" title="23-Apr-19 07:48 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">23-Apr-19 10:53 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Continuing from 4, If they can be explained well and/or made so it&#39;s fair on others, then they may be allowed- but that&#39;s only if they can be &#39;fixed&#39; to that point.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - uptown-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">uptown-1</div>
+        
+
+        <div class="info__channel-message-count">76 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 11:01 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia was born in the USA and while she didn&#39;t like the idea of moving she didn&#39;t argue as it was part of her mother&#39;s job. So here she was moving into a decently sized house in what seemed like a pretty nice neighborhood. Xenia was rather tall and muscular for her age, even in America. Her long white hair in a ponytail as she&#39;s hefting a big box down her walkway to her house.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 11:16 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku just hopped down from his front gate that led to his oversized prison. He landed on his feet, and started to dust off his pants sweater with his scarf. He fixed his skullcap and adjusted his camera bag. He was tall and rather slender, with wild black and red hair. He adjusted his clothes to cover his tanned skin and protect himself from the sun. With the coast clear he started to hustle down the road.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 11:23 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia was taking a break putting her box down as she looked around, that&#39;s when she spotted a person who seemed around her age jump a fence. She had only been speaking Japanese for a little over a month now having taken the last year to learn it. She waves to him and tried her best to speck in Japanese.
+&quot;Hello&quot; she called out, her mother told her to try and make friends with the Neighbors</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 11:39 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku was caught off-guard by the accent of the greeting.  He looked up to see a girl calling out to him. He put up a hand and waved back to her nervously. He spoke back in Japanese. &quot;Good morning. &quot; He noticed the box at her feet as he slowed his pace and walked up to her property line. &quot;N-new to the area?&quot; He asked.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 12:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia nodded as she looked for the words. &quot;Yup my mother just moved moved jobs&quot; to come over to him. Standing at most an inch taller then him. &quot;My name is Xenia....&quot; a thought came to her. &quot;I mean it&#39;s kelesy&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku slowed his speech down, figuring out she was a foreigner. &quot; Kohatana Daiku. A pleasure to meet you.&quot; Daiku gave a slight bow to her. &quot;Would you need any help, Kelesy-san?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 12:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia really wanted to tell him just to call her Xenia but that&#39;s not how things worked over here. It took her a bit to answer just trying to avoid that snafu. &quot;I mean if your free I don&#39;t mean to bother as we just met but I won&#39;t say no to the offer&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 01:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku gave a nod. He pointed to the box to gesture that he&#39;s gonna pick it up and goes to do so.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 01:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia smiled. &quot;Thank you so much.&quot; she said moving to grab another box following behind him. &quot;So was that your house I saw your jump the fence of?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 01:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku felt that little shock that goes through your spine when you get caught doing something you shouldn&#39;t. &quot;Yeah. That&#39;s my home. &quot; He gave a little chuckle. &quot;The gate sticks sometimes so i just hop it to save time.&quot; Speaking half-truths  through his teeth.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 01:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 01:53 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia was releved a little at that glad she didn&#39;t bring a Thief into her home in the first day.
+As they entered the thresh hold of the house a rather buff guy with pale skin was standing in the way, a beard and short hair on his head, tons of tattoos on his body, some on his face, one on his shoulder with a ruby gem and some number with Xenia under the ruby. Wearing a tank top and jeans
+&quot;Umm hello?&quot; he said before seeing his daughter behind the guy. &quot;You helping?&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="14-May-19 02:08 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 01:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku smiled his model smile. &quot;Yes. I&#39;m helping. You must be Kelsey-san&#39;s father. Nice to meet you. I&#39;m Kohatana Daiku.&quot; It was said slowly as he had done so with Xenia earlier.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 02:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;That I am, Nice to meet you&quot; it seemed he was a tad more practiced at it then Xenia has he had little or no pauses between his words. &quot;Well thank you for helping.&quot; he walked past him ruffling Xenias hair. &quot;See you already made friends&quot; speaking English to her.
+
+She smiled. &quot;Umm that goes into the kitchen&quot; she told Kohatana as her father passed</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(i did edit the one where he shows up if you wanna re-read it)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 02:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Which way is that?&quot; He said walking forward and spinning around to see where Xenia would point.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 02:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">She gestured with her head to the right. On the kitchen was another person just as tall as Xenia was with really dark skin, wearing a button up shirt and a sports jacket over it, and jeans business casual if you would. Her hair shaved on one side, that was showing at least. What little hair she did have on the side of her head was segmented and each segment having a different color. The longer part of her hair parted to one side with white roots fading into green. Before she , xenia spoke up.
+&quot;Hi mom, this is.&quot; she had to remember it. &quot;Kohatana. He said he was willing to help.&quot;
+
+Looking up from the box she was currently pulling stuff out of she looked to the boy. &quot;Oh hello, it&#39;s wonderful to meet you.&quot; if Kohatana didn&#39;t know any better it could be mistaken that Xenias mother was native with how well she spoke, it was her job that got them here so that might be why.
+She continued. &quot;Your so sweet to help please just place the boxes anywhere&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 02:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">He was a little taken aback by how competent her Japanese was. &quot;It was no problem. I needed to get out of the house. This was a blessing.&quot; He smiled and placed the box on the counter and turned to help Xenia in anyway if she needed it. &quot;Has Japan treated you well so far?&quot; He asked.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 02:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia didn&#39;t really need any help she was not weak, though she took the help anyways. As her mother continued to talk to him
+&quot;I&#39;ve been here a few times even lived here before to do my job so moving her just made the most sense, these two Xenia and my husband have only been here a day but it&#39;s treated me wonderfully&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 02:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Thats great to hear. There are a lot of beautiful places to go see as well. I know I&#39;ve taken a couple of good pictures of them.&quot; He gestured to his camera bag. &quot;The city is beautiful at this time. I was just going to head downtown to snap some pics when I came across Kelesy-san.&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 03:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Well, I&#39;m sure my husband and I can handle the rest why don&#39;t you take. Xenia and show her around, we&#39;ll be a phone call away.&quot; she looked to Xenia when she said that part. &quot;If you want to come back later we are having some home made enchiladas.&quot; smiling to Kohatana.
+
+Xenia knew why her mother did that to get her out of the house as Xenia wasn&#39;t one to leave the house often but she can&#39;t disobey her mother. &quot;Of course mom well be back before dark&quot; she said low key hoping he would turn down the offer. (don&#39;t XD)</span>
+
+                                <span class="chatlog__edited-timestamp" title="14-May-19 03:19 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 04:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I am sure I could do that. Thats if she is willing to go.&quot; Daiku smiled. &quot;I&#39;ll even take a few pictures to commemorate her first time in the city.&quot; He gave a chuckle and looked to Xenia.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 04:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Putting on a rather forced smile. &quot;Of course we can do that&quot; she said staring daggers at her mother who just insistently smiled back.
+&quot;Uhh so where should we go?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 04:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I know this really beautiful hill with cherry blossoms that looks really great.&quot; He scratched his cheek as he thought. &quot;We could even try finding some graffiti downtown. There is a really vibrant underground art scene here.&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 04:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh thats do that&quot; Xenia perked right up when she heard about art. &quot;Is that like something that happens here people doing graffiti legally&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 05:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Yes and no.&quot; Daiku rubbed the back of his head. &quot; We can grab a few shots of some pieces I know about. If we are lucky we can find some being worked on.&quot; He looks down at his watch. &quot;Let&#39;s go. We got little time to spare.&quot; Daiku turns to Xenia&#39;s mother and gives her a bow. &quot;I will make sure she comes back safely. You have my word.&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 06:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh well either way that&#39;s cool let&#39;s go see some art&quot; Xenia said with a big smile legitimately happy about this now. &quot;Just let me get something from my room.&quot; she left to go to her room it didn&#39;t take long before she returned with a backpack &quot;alright i;m ready&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">14-May-19 08:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Great&quot; Daiku smiles when Xenia returns with her bag. &quot;We should be able to catch the next train downtown.&quot; He follows Xenia out of the house after saying farewell to her mother and to her father as they pass them. 
+
+Daiku walks next Xenia as they go down the road and he leads them to the station. &quot;Soooo Whats in the bag?&quot;</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">14-May-19 09:10 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Well just stuff, like my phone, some supplement pills, water bottle, a snack for later, and other stuff nothing to worry about&quot; she assured him as they walked to the train station
+
+(we can move this to downtown 2)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">15-May-19 08:15 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Daiku and Xenia would continue to have their conversation and board the train to head downtown. They share a few jokes and eventually get Daiku to correctly refer Xeria by her given name. 
+
+//end scene Move to Downtown//</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">15-May-19 11:10 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="pre pre--inline">End Scene moved to Downtown</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">22-May-19 11:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Comet⚡#6253">@Comet⚡</span> 
+
+It&#39;s been a little over half a week and the manga and comics that Xenia had piled up were running out she needed to buy more so today that would be her mission. she went out pretty early in the day using her phone to try and navigate her way around the city....she still made a few wrong turns here and their. but after about two hours of roaming she found a store that not only sold manga but comics from America it was amazing.
+
+All sorts of giddy Xenia with her backpack walked in and started looking around it was kind of nice seeing these comics it kind of felt like home only a little though not enough to get nostalgic but enough to put a smile on her face.
+but enough of that she was on a mission she needed to find the latest issue&#39;s of all the comics she was currently reading and first on the list was spider-man. 
+
+She found it, looked like it was the last one in stock but just as she was about to reach for it someone else grabbed it. &quot;Hey I was going for that&quot; she said with out really thinking.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">22-May-19 11:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Having been in the middle of transfering Izaya hasnt had much to do but train for his entrance exam. So on his free time we would visit the local comic shop to pick up his usuals. <em>hmm lets see Batman...Flash... Ahah and heres spiderman.</em>
+Having had headphones on playing music he only heard a the strangers muffled words. 
+Although he did see the girl from the corner of his eye as he stood back up to his feet and turned to the rather tall girl. 
+&quot;huhhh?&quot; 
+he said with a rather confused face as he usually never really interacted with anyone there.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">22-May-19 11:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia sighed it wasn&#39;t hard to notice the ear buds in his ears with his darker skin the their white color it stood out pretty well. she pointed to her ear. trying to indicate to take them off.</span>
+
+                                <span class="chatlog__edited-timestamp" title="22-May-19 11:58 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 12:04 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Izaya took out a earbud as the music paused. 
+&quot;What?&quot; he said in english first before switching to Japanese &quot;oh i mean What?&quot;
+still sounding confuse cause he hadnt heard what she said. 
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 12:10 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia was taken back by him speaking in English so she responded in English cause it was nice that she could. &quot;oh you know English awesome&quot; but she looked to the comic in his hand. &quot;As I was saying I was reaching for that. I need to catch up on the latest issue.&quot; she pointed to the spider-man comic he was holding
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 12:18 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 12:22 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;yeah i uhhh...&quot; he continued in Japanese then switching back to english.
+&quot;sorry...yeah i doo&quot;
+looking down to the book he picked up then back up at her
+&quot;Ooh...this? sorry look like the last one&quot; 
+he looked over to the clerk about to ask if they have anymore then stopped as he opened his mouth. 
+&quot;wait you speak english?&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 12:28 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia didn&#39;t know if she should be confused or flabbergasted or just laugh.
+&quot;Your just now picking that up?&quot; She said with a slight huff &quot;But come on Spider-man is like my number one hero just let me take this one and you can take the next one when they restock. you already have batman, the flash, those can keep you busy right.&quot;
+she sounded a tad entitled but she wasn&#39;t picking up on it herself.
+
+&quot;OR&quot; Xenia just thought of something pulling her hand back from pointing at it.
+&quot;WHy don&#39;t you just let me read it now and then you can take it after?&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 12:32 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 12:41 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Izaya just looks with a blank expression on his face for a moment then turns back to the clerk lifting the comic up in front of him.
+&quot;Hey got any more of these?&quot;
+<em>&quot;What ever we got on the shelves.&quot;</em> 
+izaya turned back to the girl and shrugged.
+&quot;Well looks like you&#39;ll have to wait... I did grab it first.&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 12:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;You are right you did grab it first.&quot; Xenia sighed. &quot;But like it wouldn&#39;t be to much trouble to just let me read it real quick, maybe we can read it together I just don&#39;t know when they restock it again.&quot; she looked up to him
+Turning to the clerk. speaking in Japanese.
+&quot;When do you restock these?&quot;
+<em>&quot;Next week&quot;</em> the clerk said.
+Xenia sighed again. 
+&quot;It is only fair you did get to it before me after all. I hope you enjoy it. the story was just starting to get really wild that to be continued from the last issue just killed me.&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 12:47 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 12:54 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">His eyes shift to look at the clerk then back at the girl.
+&quot;uhhh dont think thats allowed if you dont purchase it.&quot;
+he looks down looking at the book for a moment before she suggest they read it together. He blushes a bit at the thought of closely reading the book together with another girl. 
+&quot;I uhh... well... I guess we can read it together&quot;
+blushing a bit more as those words came out his mouth. Then changing tones to avoid her noticing.
+&quot;But you owe me one.&quot; 
+he says as he walks over to pay for the rest of the books he has. 
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 12:58 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">This did bring a smile to her face as she watched him buy it. 
+&quot;Great umm. just give me a moment I was here for a few things so umm like I&#39;ll be quick&quot; 
+Xenia walked around grabbing a few comics and a few manga&#39;s before appearing in the line to buy them. Once she finished buying them she found him again walking over with her bag still a big smile on her face.
+&quot;So if we can&#39;t read it here where should we go, also what do I owe you?&quot; 
+she generally wanted to know she didn&#39;t mind that she owed him something she was just happy to be able to read the comic.
+&quot;I can buy us some food somewhere and we can read and eat while we read it?&quot; Xenia offered
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="23-May-19 01:01 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 04:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Ohh umm well... I guess a favor...&quot;
+he waited over by the door waiting for her to finish her purchase. As she asked him if they should get something to eat together he blushed again as his eyes grew wide.
+<em>shit is she asking me on a date?</em>
+&quot;uhhhh...&quot;
+he said as he began pushing the door open and looked back at her&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 04:39 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I guess a favour to be determined later sure...just don&#39;t go abusing it&quot; 
+she teased as they walked out
+&quot;Yea like one guy I meet last week showed me this sushi place I&#39;ve been visiting a lot. We could go there but it&#39;s downtown....I don&#39;t know what&#39;s near here&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">23-May-19 08:37 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">as they walked out he paused in front of the store.
+&quot;I...I&#39;m not sure&quot; 
+he said scratching his head.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">23-May-19 10:41 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh how about there?&quot; 
+Xenia pointed to what seemed like a nice restaurant down the street.
+&quot;I have no idea what it is but let&#39;s explore seems like fun&quot; 
+Xenia started walking that way, looking back to see if her new friend was following. then it hit her.
+&quot;Oh i&#39;m so sorry how rude of my My name is Xenia Kelesy. might not have been the best way to meet someone but it happened.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">24-May-19 12:31 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh okay...&quot;
+he slowly followed behind Xenia as she walked towards their destination until they stopped at the cross walk.
+&quot;Oh sorry Im Izaya&quot; 
+he said as he reached forward with his hand which had the bag in it until he stopped to place it in the other hand to proceed to properly greet her.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">24-May-19 12:38 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia reached out to shake his hand. 
+&quot;Pleasure to meet you Izaya. I&#39;m sorry with how rude I was before. Spider-man is just my favorite hero so I can get a tad excited. I really do owe you one for letting me share it with you so that I&#39;m not behind next week with the new issue&quot; 
+Xenia stopped herself and sighed.
+&quot;There I go again talking to much about it&quot;
+she looked forward just in time to get the Green walking man to tell them they can cross.
+&quot;For troubling you I&#39;ll buy the food&quot; 
+The closer they got the more it seemed this wasn&#39;t a fast food place or even a semi sit down fast food place but it was a nicer restaurant a Sukiyaki-ya one to be exact which was on the richer side of food places.
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">26-May-19 01:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Haha it’s fine me too” 
+He crossed the street as they got closer to the restaurant he noticed how upscale it was. 
+“No no it’s fine it wasn’t too much trouble that you need to pay for my food... uhhh are you sure you want to go here.” 
+He slowed down hesitant to keep walking as he raised a finger looking at the sign and into the restaurant. 
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">26-May-19 02:23 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I mean why not, it&#39;s a place we can sit and eat and read right?&quot;
+Xenia looked to the restaurants trying to see if anything was wrong with it right away but not really seeing anything.
+&quot;Something wrong with it?&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="26-May-19 04:37 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">27-May-19 11:16 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I don’t know this place looks a bit too fancy to be going in to share a comic book.”
+Izaya kept walking as he grew more and more hesitant to eat a nice restaurant for lunch out of all places.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">27-May-19 02:21 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I mean it was just the first place I saw. but I can look for somewhere else.&quot; 
+<em>she pulled out her phone and flipped it open as she started to look for somewhere they could eat and read some comics something not fancy.</em>
+&quot;Oh here we go there&#39;s a roman shop not that far wanna go there?&#39; 
+<em>Xenia asked hoping it would be ok for him</em>
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">29-May-19 02:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Izaya tried to look over her shoulder as she looked at her phone for another place.
+“Ahh yeah that’s much better hehe”
+Izaya began walking with out having checked which direction it was in. 
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">29-May-19 02:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Of course.&quot; Xenia smiled as they made their way to the Ramen shop. 
+&quot;So what other comics do you like. Other then spider-man dare devil is a big comic I really like, I love his super power it&#39;s so good&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">29-May-19 03:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Izaya turned around and began walking backwards for a second to speak to Xenia.
+“Oh... well... the other few I picked up today are my regulars.”
+He then bumped into someone walking on the sidewalk. 
+“Oh I’m so sorry sir” 
+Now turning back around to walk side by side with her.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">29-May-19 03:11 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia tried to say something but was to late.
+&quot;Sorry I should have said something sooner&quot; she looked very sorry for not being fast enough hoping to change the subject she continued with the comic talk.
+&quot;personally not a fan of Batman he is way over hyped, like he isn&#39;t bad of course one of the better ones, but the argument for winning being. Quote because I&#39;m batman, just undermines his whole character. I do like the flash though very underappreciated&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">31-May-19 04:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“I uhh...”
+He raised a finger before stopping himself. She had mentioned the exact ones that he bought but was against Batman, <em>How could she? he’s amazing!</em>. He thought to himself that he’d rather not argue it not everyone has to like it. 
+“Yeah i really like them...I’m actually from the same place as Spider-Man so that’s why I’m such a fan.”
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 05:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh that&#39;s cool....there is no hero&#39;s from Michigan at least none that I found intresting enough to keep my attention. So do you read any of the spider comics like spider-Gwen or well any of the other ones?&quot;
+The Ramen shop was just down the way from where they were it wouldn&#39;t be long before they arrived.
+&quot;Remember meal is on me anything you want&quot; Xenia beamed with a smile
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">02-Jun-19 02:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;ehh not really she doesnt tickle my fancy&quot;
+As they kept walking they soon approached the front entrance. 
+&quot;no no no its fine i can pay for myself&quot; 
+hes said as he began pulling on the door to hold for her.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:40 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Are you sure?&quot; 
+Xenia asked as she moved past the half hanging certain cover things to sit down.
+&quot;and I was just talking any of the spider-people not just gwen. Like I love ultimate spider-man, miles morales it started out kind of bad but got so much better as the years went on.&quot;
+Xenia placed her bags on the side of her stool on the ground.
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">05-Jun-19 11:44 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;yes im sure&quot;
+he laughed nervously.
+&quot;oh yeah for sure but nothing beats the classic&quot;
+Izaya took a seat and hooked his bag on the chair as a server approached.
+&quot;uhh hi&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">05-Jun-19 11:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia looked to the server walked up to them from the other side of where they were sitting.
+&quot;Hello. Umm I would like a Ka-go-shi-ma Ramen with some water please.&quot;
+Xenia slowly read off one of the item&#39;s on the menu she thought looked good. here is to hoping.
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">06-Jun-19 12:03 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;hmm&quot;
+as Xenia ordered Izaya took a gander at the menu.
+&quot;i&#39;ll have... a spicy chicken rice bowl, black garlic Tonk ot su... and some kimchi.&quot;
+Izaya spoke rapidly then pausing for a second.
+&quot;hmm i suppose thats it.&quot;
+he just turned and smiled smuggly at xenia 
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 12:25 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia smirked.
+&quot;Offer still stands.&quot;
+She rummaged through her bag for a moment and pulled out her phone as she sent a quick message to someone before putting it down and looking to him.
+&quot;So how long you been in japan?&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">06-Jun-19 12:43 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Izaya looked around the shop for a bit then looking back at xenia awkwardly tapping the tips of his fingers on the table. 
+&quot;uhh...just a few days really... how bout you?&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 12:46 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I moved in this past weekend. Mom&#39;s new job was why we moved. and Dad&#39;s been working on organizing the house. I&#39;m out today to update my collection of comic&#39;s and manga&#39;s so i have something to do while we still wait for the internet to be set up. The only real complaint I have is the train map it&#39;s so confusing I get on the wrong train at least once every time I try and go somewhere. My mom is the only one that seems to be able to understand how to read it. so confusing. Otherwise I&#39;ve been loving it, Dad and I are looking for a new gym gotta keep up on our work out routine. I&#39;ve just been loving exploring the city.....though I&#39;m still new so I suspect that to die down once I&#39;ve been her long enough.&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="06-Jun-19 12:53 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 12:53 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">06-Jun-19 01:01 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh really? that crazy im on in the exact same boat too.&quot;
+there was a long awkward pause before he continued speaking.
+&quot;Oh well i mean the opposite though... with my dad that is. He got a new job out here plus my mom grew up here so she knows the place and got a job with an old friend
+i guess we got settled in pretty quickly.&quot;
+izaya looked around the shop some more as his eyes wondered.
+&quot;ive been here when i was a kid but dont remember much really.&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 01:10 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia laughed lightly at that as he seemed to fumble with his words at first. but soon stopped as she noticed him looking around a bit and how quickly he spoke while that could be something normal for him the addition of his hesitation and him looking around made her think something else.
+&quot;Hey are you ok you seem oddly nervous, something up?&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="06-Jun-19 01:20 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">06-Jun-19 01:36 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;umm no...no i mean no im fine why?&quot;
+Izaya signed and looked down as he closed his eyes.
+&quot;its nothing i dont know&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 01:44 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Just you seem to be hesitating a little when you talk, your looking around a lot and you seem to be talking really fast.&quot;
+Xenia pointed out.
+&quot;if that&#39;s normal sorry i didn&#39;t mean to point it out. just seemed to indicate a tad of nervouseness.is all&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">08-Jun-19 07:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;its fine hehe&quot;
+<em>man i really hope this food gets here some time soon.</em>
+Izaya stayed silent not knowing what to say anymore so he reached for his bag and pulled out the books that he just bought.
+&quot;i suppose i can read while we wait for the food...&quot;
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="09-Jun-19 12:10 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">09-Jun-19 12:08 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;If you want sure&quot;
+Seemed he wasn&#39;t really in a talking mood this might have been a mistake she might have pushed a little to hard she didn&#39;t mean anything by it hopefully they could get out of this awkwardness soon.
+&quot;Maybe you could tell me what&#39;s going on in the comic?&quot;
+<span class="mention" title="Comet⚡#6253">@Comet⚡</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - nabū-hospital-room-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">nabū-hospital-room-1</div>
+        
+
+        <div class="info__channel-message-count">98 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">31-May-19 06:01 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span>, <span class="mention" title="PimpShrimp#1697">@PimpShrimp</span>, <span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Slowly, Xenia came to consciousness. Looking around the white, sterile room she recognized The telltale smell of the hospital. To her right she saw Haruki, also conscious and bandaged up. To her left, Ketsuki and Karat sat in two chairs, seemingly waiting for both to awaken. Karat, of course, sat loyally. 
+&quot;Ah, there you are&quot; a man said in front of her. Turning, she noticed a doctor with green skin.  &quot;You gave us quite the scare. Thankfully your quirk plugged up a lot of your injuries. Though, we did have to patch up quite a bit. In a moment, our healer will be in for your second round&quot; he stated, looking at the chart his hand. He then turned to take his leave.</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 06:14 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 08:14 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Omg Karat in a chair how cute ^-^))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 08:21 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia didn&#39;t attempt to get up but did ask. &quot;Should I wait for the healer to remove the bones over my wounds?&quot; Xenia didn&#39;t have any cast has she had increased her bones density rather early in the fight, so nothing was broken but she had plenty of cuts on her hands, which were all thanks to her quirk, a lot of bruises one paticular one on her collar bone. She tried to sit up only to notice she had dificulty moving her right leg and arm as she had ripped some of her muscles do to the rebar she had sticking in when she fell. 
+So she just laid there sighing only to grunt in pain. While her concussion most likly was mostly over the headache it caused was still very much still there.
+
+ Turning her head to see the other two, she&#39;s only met one of them once while going into the mall a bit ago, kyu she knew a little better.
+&quot;I didn&#39;t even know you were there&quot; Xenia said to her, unsure of she was up or not.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span> 
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 08:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Same here. I only knew that Kohatana-san and Kanai-san were there. The elevator stopped when the floor collapsed. Karat says he’s”
+<em>She attempted to gesture towards Haruki</em>
+“-the ‘Good Boy’.”
+<em>She said ‘good boy’ in English, as it was one of the few phrases she didn’t mind using, as Karat really enjoyed it.</em>
+<em>Ketsuki was wearing the same clothes as she had been at the mall, a pink backless shirt and jeans. Her shoes had been swapped out for a pair of indoor slippers, but she had slipped her feet out of them and was using them more like a makeshift floor mat. The white fur on the front half of her right foot had clearly been cleaned, but some faint bloodstains still remained, the most notable being near her claws, where if one looked closely they could see one had been completely pulled out.</em>
+
+((Ketsuki is deliberately avoiding talking about what happened to her))</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 08:39 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">31-May-19 08:36 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Ask what happened to her))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 08:45 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Yes please do))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">31-May-19 08:51 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki slowly woke up and saw the two others in the room, Xenia the only one who also was in a hospital bed. He looked down to his left arm, which was completely bandaged up. As he tried to move it the pain was just too much right now. He winced a bit and tried to sit himself up, succeeding though only after a bit of work. He looked towards Ketsuki and Karat, smiling</em> 
+&quot;Oh, good that you two are okay at least.&quot; 
+<em>He looked at Ketsuki</em> 
+&quot;You kinda blacked out, your pal there was really worried. You didn&#39;t hit your head did you?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 08:52 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(I don’t think there are any NPCs rn, Kampy was just setting the scene I think)</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">31-May-19 08:55 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Oh okay))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">31-May-19 08:59 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((in a few rounds there will be a couple. <span class="mention" title="sean_avm#3323">@sean_avm</span> can keep going for now, though))</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 09:00 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 09:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">It seemed Xenia was to late in her question about her bones as the doctor had already left. She didn&#39;t really care as she looked up to the ceiling, once more. &quot;I honestly don&#39;t remember a whole lot of what happened truth be told. I must have hit my head I have the worst headache.&quot; she raised her left hand and placed it on her head.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 09:38 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki shrugged, doing her usual dodging of questions related to her. She also mixed in a few French words with her Japanese.</em>
+“Ils cleared moi, was told to wait here.”
+<em>Karat just looked at her, his expression seeming to say ‘you lying bitch’.</em>
+“Hmm, speaking of what happened, they didn’t tell me anything. I’ve been up for a few hours now and it’s just been them refusing to answer my questions about who was there and if anyone got severely hurt.”</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 09:40 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">31-May-19 09:50 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki smiled towards her, then looked at his bandaged arm</em> 
+&quot;Some people got hurt... Daiku, wire guy, dark boy... I hope they&#39;re alright...&quot; 
+<em>He tried to sit up on the side of the bed, grabbing his ribs with his good arm in the process</em> 
+&quot;I&#39;ve not felt a rush like that in a long time...&quot;
+<em>He looked down onto the numerous scars running along his arm, seemingly contemplating something</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 10:01 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 10:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia still didn&#39;t attempt to get up. &quot;All I remember is a shark....on land is that right? Also landing on the ground a lot the last thing I remember is ugh I don&#39;t even, know....but your both ok?&quot; Xenia tried to recall the events
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 10:56 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki muttered to herself, but her voice was still audible.</em>
+“A shark? So Karat didn’t make that part up...”
+<em>Karat rolled his eyes. “I don’t lie Ketsuki.” He got out of the chair and took a much more comfortable position lying down beneath it.</em>
+<em>Ketsuki whispered to him</em>
+“You do exaggerate a lot though.”
+<em>She didn’t pay much attention to the others in the room.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">31-May-19 11:52 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked towards Xenia, Ketsuki and Karat</em> 
+&quot;Yeah, he was like a shark but on land. Must&#39;ve been his quirk.&quot;
+<em>He then adressed Xenia&#39;s question</em>
+&quot;I&#39;ve been worse. I just hope I can recover soon, I need to train more.&quot;
+<em>He tried to stand up, but fell back into the bed again</em> 
+&quot;I need to become stronger if I want to become a hero...&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">31-May-19 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">A slight commotion was heard outside door before it slid open. On the otherside, Sunstrike stood. Beside her, talking with a police officer, was a man in a 3 piece suit wearing dark sunglasses and sporting bleach blonde hair with a large pompadour. Sunstrike stepped inside, then closed the door behind her. Still in her gi, she walked towards the center of the room, her hard eyes glancing at each of the kids.
+&quot;You&#39;re lucky you&#39;re alive. That &quot;land shark&quot;, Fukahire, or Hammerhead as he likes to be called, isn&#39;t one to mess with if you aren&#39;t prepared.&quot; She began.</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 12:05 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 12:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia nodded. &quot;Yea I&#39;d say so. I didn&#39;t know skin could get that tough, there has only been a few things I couldn&#39;t get my bones through....he is now one of them.&quot; a thought happened to pop in to her head. &quot;Where is kanai? He was charged by the shark I only attacked cause he attacked Kanai.&quot; Xenia looked to the person in the gi not recognizing her as her thoughts were somewhere else also she was having a hard time looking with her head down so she didn&#39;t bother to.</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 02:50 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/410150179887382541/4f833569dca7b675a011f872d62415a8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasty McSplody#1235" data-user-id="410150179887382541">Blasty McSplody</span>
+                <span class="chatlog__timestamp">31-May-19 01:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((for a hot second I though Karat was happy Daiku got hurt))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 01:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Karat has tuned out the world lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 02:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki looked up, despite being unable to see</em>
+“Kohatana-San was attacked?”
+<em>Karat kept wagging his tail, happy to see the hero that had saved his human and Good Boy (Haruki) from getting further injuries.</em>
+<em>Ketsuki’s phone started ringing, and in French said “Call from Bernadette the bitch”. Ketsuki ignored her phone.</em>
+<span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Sorry, meant to edit and deleted))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">31-May-19 03:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked at Ketsuki</em> 
+&quot;Yeah, he took some damage, but I think he&#39;s okay.&quot; 
+<em>He then looked towards Sunstrike</em> 
+&quot;Thank you for saving us. Was anybody except us hurt?&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 03:15 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">31-May-19 05:08 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Sunstrike regarded Haruki before turning to look at Karat. &quot;No one died. But that floor collapse caught quite a few people&quot; she said, with a light sigh. 
+&quot;There were several of you who should have just let Fukahire get away. You would have caused less damage and fewer people would have gotten hurt&quot; she indicated severely. Then, she sighed again and looked toward the door. &quot;But, I understand your feelings. Sometimes, you just can&#39;t help it. Sometimes, <em>trying</em> is more important.&quot;
+Walking back to the door she paused. &quot;I pulled some strings. Called in a favor. I expect to see all of you apply to UA. Or else I&#39;ll rescind that favor. I dislike people who break the law. So you&#39;ll need to make sure, when you can&#39;t help yourself, that you aren&#39;t. And that you&#39;re ready for a meathead like Fukahire&quot;.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">31-May-19 05:17 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">31-May-19 06:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia laughed half heartedly only to stop with the pain of her head. &quot;That was my plan to start with. this only made me want to even more.&quot; she raised her hand seeing the scars running up her arm and her hand that was bandaged up. &quot;All the pain I go through to use my quirk has to be for a reason I can&#39;t let it go to waste so Expect me at UA i won&#39;t disappoint you.&quot; she let her hand drop back down.
+&quot;What does the public know?&quot;
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 06:34 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 07:10 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki’s phone continued to go off, first giving an alert in Japanese, and then changed to French to read out the messages</em>
+“Message from Bernadette: KIKI WTF????”
+“Message from Bernadette: I WOKE UP TO SEE A VIDEO WITH YOU”
+“Message from Bernadette: KIKI ANSWER MY CALLS”
+“Message from Bernadette: ARE YOU OKAY???”
+“Message from Mama: Ketsuki please call me once you’re able to. Your father told me what he knows so far but I would like to talk to you.”
+“Message from Bernadette: I saw the video that was you right???????”
+<em>And one message in English:</em>
+“Message from Deformed Peacock: Damn Kiki you okay? Bernadette was historical I’m so confused girl. Did you quit the Twitter or something she wouldn’t tell me. It’s the middle of the night why is she calling me???”
+
+<em>Ketsuki ignored all these messages as they continued to chime in one after another, pretty much all of them from Bernadette</em>
+“Guessing by the swarm of messages I’m getting from a friend, there’s a video of the incident. And no, I’m not responding to her. Better for her to think I’m-“
+<em>suddenly, a final message was read out in French</em>
+“Message from Bernadette: Oh thank god i called your mom and you’re okay I’ll stop texting you. Get well soon lesser than three.”
+“Damn it,” <em>Ketsuki said</em>
+((And Yes, the message from deformed peacock is correct. He said historical instead of hysterical. And no Ketsuki doesn’t understand a single word of what he said))</span>
+
+                                <span class="chatlog__edited-timestamp" title="31-May-19 07:11 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">31-May-19 10:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Should also add, deformed peacock is written in English))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">02-Jun-19 04:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked at Sunstrike</em> 
+&quot;I will, don&#39;t worry.&quot; 
+<em>He then tried to stand up again, this time with some success, though he fell to one knee when he tried to walk. He muttered to himself</em> 
+&quot;I can&#39;t stay here... I need to train...&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:03 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">She nodded. Then reached out to open the door, stopping as her hand reached the flat handle. &quot;I am glad you all made it through though...&quot; She stated, almost smally. Then, she opened the door revealing the man with the pompadour and the horned policeman before exiting. 
+&quot;One more room Reiko-chan! Oh, and chief Tetsyua isn&#39;t exactly happy!&quot; The man chuckled.
+&quot;I don&#39;t care. He owed us.&quot; She replied, before closing the door. 
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:13 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span> is actually next</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">02-Jun-19 10:19 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia looked over to kyu just as the messages stopped. &quot;Everything ok over there?&quot;
+&quot;Oh I&#39;m not going to hear the end of this when my parents hear about it&quot; Xenia thought.
+She then looked to the other one she only meet once she couldn&#39;t remember his name. But she knew one thing.
+&quot;If you train before you&#39;re fully healed you&#39;ll permanently damage your body it&#39;s better to wait till after your healed before trying to train. You won&#39;t get stronger just weaker if you start now&quot; Xenia closed her eyes to try and relaxe for as long as they would allow.
+&quot;Didn&#39;t the doc say a healer would be coming in?&quot;
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">02-Jun-19 11:20 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(whoops. Sorry)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">02-Jun-19 02:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki blushed a little, hoping the single English message from Oliver (or as her phone called him, “deformed peacock”) wasn’t heard by the others.</em>
+“Just a concerned... ‘friend’...”
+<em>The tone of her voice implying she didn’t quite like that person</em>
+“And yeah, the doctor did mention a healer. I wonder what their quirk is...”
+
+((Again, deformed peacock is in English))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">03-Jun-19 01:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki sighed at Xenia</em> 
+&quot;Yeah... you&#39;re right.&quot; 
+<em>He stood up and quickly fell onto his back horizontally over the hospital bed, looking towards Ketsuki, upside-down, smiling enthusiastically</em> 
+&quot;Deformed peacock? That sound cool!&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 01:32 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 01:53 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Wait so you both know English?&quot; she asked but still spoke Japanese as she didn&#39;t know how much they knew.
+&quot;So you have many names such as kiki, deformed peacock, though that sounds more insulting. So you just prefer kyu?&quot; Xenia asked looking over to the bat girl.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:02 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki blushed</em>
+“Uh, no. I don’t understand English at all, save a few loan-words from French. I can say ‘good boy’ to Karat, but that’s it. Is ‘deformed peacock’ an English insult?”</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((So yes, deformed is a cognate for d&#233;forme in French, but Ketsuki was told it was a false cognate by Bernadette and believed her))</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 02:04 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((a cognate?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Words that have the same linguistic derivation. Sometimes they sound similar between languages, as is the case with deform and d&#233;form&#233;))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((False cognates are words that do not mean anything related to each other at all but sound related))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((did not know that cool....so is a cognat?)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">#rp-general-chat</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:11 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked at Xenia</em> 
+&quot;I know a bit. Enough to at least understand what &#39;deformed peacock&#39; means.&quot;
+<em>He then turned towards Ketsuki again</em> 
+&quot;Kiki sounds really cute. Is it okay if I call you that?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:13 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;That depends on how you take it, either he is calling you ugly cause peacocks are normaly very beautiful, or he is calling you beautiful like a peakcock but deformed cause your more bat like.&quot; Xenia shrugged. &quot;Just what I would think at least. And kiki is kind of nice are you with that?&quot;
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:17 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki blushed</em>
+“Please don’t call me that...”
+<em>She pet Karat’s head.</em>
+“I think you misunderstood. My phone reads out the sender and the message. He doesn’t call me “deformed peacock”, I call him that, though I’m not sure why Bernadette told me to call him that... his quirk is hummingbird so I don’t think it’s offensive...”</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 02:19 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Ketsuki can’t find a way to lie out of this one, since she has no idea what was said in Oliver/deformed peacock’s message))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki smiled camly towards Ketsuki</em> 
+&quot;Okay, then I won&#39;t call you that.&quot;
+<em>Suddenly, he sat up on the side of the bed</em> 
+&quot;Wait, where are the others that also tried to help? Are they also in this hospital somewhere?&quot;</span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 02:23 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;I would assume so if they could get me unstuck from the rubble in sure they got the others there was only so much room for people in these rooms. Also that hero said everyone was safe right or did I imagin that part&quot;
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">03-Jun-19 02:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">“Sunstrike said no one died. They could be in critical condition for all we know, which would explain why they aren’t here.”
+<em>Karat looked at Ketsuki and silently told her about the state of Jonathan, Daiku, and Hayashi.</em>
+“Oh, I remember now. One of the um... Doctor’s told me. The electricity finger kid had... wait what... um... internal bleeding I think. Kohatana-san is... hey don’t be rude... fine. He just.... exploded but didn’t die? And Kanai-san... actually I don’t remember what happened to him.”
+<em>As Ketsuki went on relaying what the “doctors” told her, it became very clear she did not get this information from anyone in the medical field.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="03-Jun-19 02:51 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">03-Jun-19 03:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked at Ketsuki with one raised eyebrow, but with a enthusiastic smile</em> 
+&quot;Well, let&#39;s hope they&#39;re okay. That stuff sounds pretty rough!&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">03-Jun-19 03:23 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia knows nothing of medical outside of bones and even then she&#39;s only above average not professional.
+&quot;Not like we can do anything about it anyways, I can&#39;t really use my right arm and leg right now so that&#39;s fun.&quot; Xenia looked around
+&quot;How much longer before that healer shows up?&quot;
+
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">03-Jun-19 04:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(tag me next round please)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">04-Jun-19 11:30 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span>  (ok your turn got the ok from the other two)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">04-Jun-19 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;What a coincidence, she&#39;s here&quot; the green skin doctor chortled as he slid the door open. Walking in, he flipped through each of their files once more before gesturing for someone to come in. A nurse entered, holding a lead. Following her was a large, brown and white cow, chewing on cud.
+&quot;Everyone, meet your healer, Ayako-chan&quot; he smiled, gesturing to the cow, who let out a reverberating moo.
+<span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="04-Jun-19 12:05 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">04-Jun-19 12:10 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Oh a cow.....&quot; Xenia didn&#39;t really know what to say honestly. &quot;So like how does this work?&quot; she asked looking to the doctor with a puzzled look trying to sit up with her good arm and leg still unable to move her right arm and leg
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">04-Jun-19 02:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki remained silent in her chair, as she didn’t have a reason to say anything</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">04-Jun-19 03:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked at the cow that had now entered the room</em> 
+&quot;Well, this was unexpected.&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">04-Jun-19 05:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">The doctor motioned the nurse before speaking. 
+&quot;Ayako-chan is a rare type of animal with a quirk. Her raw milk greatly enhances the body&#39;s healing ability. Of course, since it&#39;s natural healing, you&#39;ll retain any visible indications such as scars.&quot; As the doctor explained, the nurse gently milked Ayako. 
+&quot;Now, Kyū-san, you were not too injured, so you will not need to drink any. As for the other two, bottoms up&quot; he joked, as the nurse handed out glasses of the warm milk. 
+&quot;go yukkuri meshi agatte kudasai&quot; she stated (basically, &quot;please enjoy your meal&quot;).</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As the kids drank, they felt the effects immediately. Though they began to heal, they also felt a general soreness.
+&quot;You&#39;ll be healed enough to leave in about a. Hour and a half&quot; the doctor states as Ayako was lead out of the room.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">04-Jun-19 06:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Xenia with the help of the doctor sat up more proper on the bed so that she didn&#39;t water bored herself with the milk as she was trying to drink it. the milk was warm which was something Xenia didn&#39;t like not because of the idea of where it came from she just didn&#39;t like warm milk it had to be cold for her but this was going to heal her so she would suffer for that. and more as the effects took in, honestly the feeling that washed over her was very familiar to the day after a very hardcore work out with her dad, it still sucked but it wasn&#39;t anything that Xenia couldn&#39;t handle as she could feel her right arm and right leg hurt the worse as that&#39;s where most of the damage to her body was. the muscles healing and coming together months of physical therapy and hospital&#39;s all gone in a matter of moments.
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">06-Jun-19 03:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Ketsuki waited while the other two drank the milk.</em>
+<em>”I want milk...” Karat telepathically whined to Ketsuki.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">06-Jun-19 03:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki drank the milk, happily suprised by how fast the healing took effect. He immediately tried to stand up, this time doing so with no immediate difficulty. He looked at Ketsuki and Xenia, smiling</em> 
+&quot;Well, I gotta go now. Got stuff to do. Hope I see you guys later!&quot; 
+<em>He limped his way out of the room, checked himself out of the hospital and started making his way home</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Haruki is out of the scene))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="sean_avm#3323">@sean_avm</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">06-Jun-19 05:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((cool if I just narrate the end of the scene here?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">06-Jun-19 05:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Okay for me))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">06-Jun-19 05:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((<img class="emoji " alt="👍" title="👍" src="https://twemoji.maxcdn.com/2/72x72/1f44d.png" />))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/131260590311211008/a4a30deb0af2cddcdac50c3d48592eca.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="sean_avm#3323" data-user-id="131260590311211008">sean_avm</span>
+                <span class="chatlog__timestamp">06-Jun-19 06:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">yea sure thing))</span>
+
+                                <span class="chatlog__edited-timestamp" title="06-Jun-19 06:34 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">06-Jun-19 10:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As the kids rest they feel the telltale soreness of their bodies rapidly healing. Bones pop, skin regrows, organs heal, and the 3 start to feel revitalized. An hour later, they are discharged, escorted out of the hospital by the police, and given the business card of the Misty Mountains Hero Agency
+
+<strong>End scene. End event</strong></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

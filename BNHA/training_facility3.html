@@ -1,0 +1,3869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - training-facility-3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">training-facility-3</div>
+        
+
+        <div class="info__channel-message-count">215 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 09:27 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">February 25th
+
+The chill in the air bites at the students as they make their way to their assigned training ground. With the written exam out of the way, the only thing left in their way is the practical exam. The Principal of UA, Ise Hanekage, -an owl wearing a monocle and an Oxford cap who presented their written exam and then provided instruction on where to go afterwards- had indicated this year was to be a combat based exam. As the prospective students gathered in front of a massive gate, murmurs could be heard wondering what kind of combat exam could await them beyond the enormous walls.
+
+On top of one of the walls a massive monitor could be seen. The screen suddenly flipped on. A man wearing a reddish brown tunic, red cape with a tall collar, red wide brimmed hat, and brown Domino mask was revealed. It was the pro hero Red Mage, a known teacher at UA. He smiled as he looked down at the group.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Welcome! You lucky few have made it to the next leg of this illustrious opportunity!&quot; He said loudly, with sweeping, grandiose arms. He bowed low like an English gentleman, before popping up and tipping his hat.
+&quot;As you all know, this is the most important exam of your student lives. It will determine your very future! Everything you&#39;ve strove for, all your heroic hopes and endeavours are all determined by <em>this</em> moment!&quot; He announced, a thespian giving the performance of a lifetime. He brought a hand to his chin and cupped it between his fingers.
+&quot;Actually, this reminds me of a wonderful story I…&quot;
+
+Suddenly, from off screen, a stern, young woman&#39;s voice could be heard interrupting, &quot;Get to the point!&quot;
+
+Jumping, he looked embarrassed for a second and scratched the back of his head, his voice going up a pitch in nervousness, &quot;Ah, yes, of course.&quot; He chuckled, then cleared his throat and turned back to the camera.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">&quot;Unlike previous years, there will be no visible point system this year. Our panel of staff will evaluate you in real-time based on the amount of enemies you take down, in addition to other criteria. You may be wondering, what is the criteria? Well, you&#39;ll find out at the end!&quot;
+
+He turned slightly, allowing for a visual of four different robots to pop up beside him. &quot;Your enemies will be the following training robot models:
+
+TRS Model- Small Robot: Multiple Visible Off Buttons and Easily Destroyed or DeDeactivat
+TRM Model - Medium Robot: Single Visible Off Button and Moderately Difficult to Destroy or Deactivate.
+TRL Model - Large Robot: Single Hidden Off Button and Very Difficult to Destroy or Deactivate
+TRC Model- Colossal Robot: No Off Button and Impossible for a Student to Destroy or Deactivate.
+
+They will attack in 4 waves. It will be beneficial to make it through all four waves!&quot; Red Mage declared. A timer then appeared. &quot;You will have 1 hour. The doors will open in 5 minutes. Prepare yourselves, and good luck!&quot; He declared with another bow and a dashing smile, before the screen turned off.</span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 11:02 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@Group 3</span> 
+Mod: <span class="mention" title="皿猫#0809">@皿猫</span>
+Reijiro
+NPCs
+Aya
+Daiku
+Haruki
+Mike</span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 09:37 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(mod, please narrate the doors opening and the first wave starting)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 11:04 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">The five minutes went by fast for the teens, and the gates open as a loud sound went off. As the gates open, only one of the robots was clearly visible. The others could be heard though, several of them moving around the city-like training area. None of them had yet noticed the teens.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">08-Jun-19 01:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Man I got some time til my turn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">08-Jun-19 01:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Although he was inspired by all pro-heroes, this hero- Red Mage-Reijiro felt disappointed by the hero he&#39;d first seen. The owl guy from earlier was a pretty cool-looking hero, but this guy was pretty boring. Regardless, the robots improved his thoughts- he couldn&#39;t wait to encounter a TRC Model robot. The lion-like teen wondered how powerful his Quirk would be against a giant. Even that this one had no button!
+
+The doors opened, and only one robot could be seen. Immediately, Reijiro charged at the robot, and struck at it with a punch. The bot was smashed back a fair distance.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 01:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">After Reijiro charged forward, demolishing the first of the small robots, several other students charged forward. Dozens of small robots, TRS models, 8ft tall machines with a single large tie for a mode of transportation and two enormous mechanical arms, flooded out of secret tunnels beneath the abandoned city&#39;s alleys, rushing toward the teens. 
+One potential student in particular lept, mechanical fans in his hands and feet spinning and carry them into the air. He brought his hands together and increased the rotation of his fans creating a blast of wind which knocked several robots into abandoned buildings, crumbling the robots into heaps of Sparks.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 01:59 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">08-Jun-19 02:13 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya ran towards a small pack of robots.  Her arms and legs would begin growing thick spines.  The follicles close to each other would merge the spines making them a little bigger and thicker.</em>
+&quot; Guess I&#39;ll handle the more exposed weak groupings.  I think the strong ones can bash the big ones in.&quot;
+<em>Once the spines we&#39;re the size she wanted, she would start doing backflips.  As she would do flips the spines would fly off her arms and legs using her movements and muscles flexing to send them like projectiles at the robots.</em></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 02:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">08-Jun-19 02:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( hope they hit the buttons XD))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">08-Jun-19 02:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku was wearing track pants and a tank top. He ran and kept up with the pack of students and watched as multiple would be students started taking out robots left and right. Daiku bodes his time. He would only use his quirk on medium or bigger sized robots. The small ones he came across, he would slap their switches to deactivate them.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki inflated his legs, bouncing into the fray. He didn&#39;t want to use up all his energy yet, so he just bounced from robot to robot, punching the switches to deactivate them, taking small breaks now and then to get his breath back, during which he just ran from robot to robot. He was so happy to be there, he couldn&#39;t help but to laugh and smile as he bounced around.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>while all of that was going on mike a group of atleast 5 small robots. Mike went behind the hoard of robots and used his quirk to move on of the robots and SLAM him into the smaller robots. Creating a huge thump sound.</em>
+&quot;Heh nailed it&quot; He said to himself
+<span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 03:27 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((larger robots aren&#39;t out yet.)) <span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 03:21 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((crap my bad <span class="mention" title="Kampy#4941">@Kampy</span>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((it&#39;s fine. If you hold your post, you can edit it. I&#39;d say just swap it out to a group of small ones)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((kk one sec)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">He continued to brute force strike at the robots, through varied punches and tackles, destroying the robots with decent ease. Whilst he was doing this, he looked over at various people, seeing who he may be at U.A. if he and them got through. That was... if he got through. From the current way it was going, he probably would get through, these robots were nothing to him.
+
+And then he saw Daiku. DAIKU. He was going to be a hero? What was with his model career? He had so many questions, and decided to make his way over.
+
+&quot;You&#39;re, the model Daiku, correct? How come you&#39;re here?&quot;.</span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 03:30 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(I think you accidentally skipped mod narration, though trying to make sure I understand things correctly first)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((me? <span class="mention" title="皿猫#0809">@皿猫</span>))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((No, Deg. You’re fine))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:46 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya’s spines managed to hit the buttons of 5 TRS, causing them to deactivate. Mike’s attack on the robots was mildly successful, but unbeknownst to him two of them were still functioning, and as they were programmed to began to follow him.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((yes!!))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:52 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As Daiku attempted to avoid combat, several small robots crawling down the sides of the abandon building walls leaped at him.
+Suddenly, as Haruki was bouncing, a small squad of TRS Robots lept from roof above him, attempting to drag him down. 
+Out of the corner of his eye, he saw another teen flying by, blasting robots with wind from his hands. The robots dug their hands into the concrete, steadying themselves against his assault.
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">08-Jun-19 03:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>After she finished doing the flips and noticed she deactivated 5 of the small ones she would run around to any smaller ones nearby trying to slap the buttons on them.  She would then head back in the direction of the others seeing how more TRS ones appeared.  She was determined to get through this so she started heading over towards Daiku and the small group coming at him</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">08-Jun-19 04:45 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku was cruising along when he was caught off guard by someone calling out his name. He turned to see the tall lion guy who was a fan of his. He turned and gave a slight wave towards Reijiro.</em> &quot;Uh... Hey.&quot; Daiku then heard telltale sounds of the TMS robots coming. He dived out the way of one attack and got them to line up. He pointed his index finger and held his elbow with the other hand. He focused and let a small laser shoot from his fingertip and through three of the robots hopefully disabling them. Daiku then started to work on the others in the group by tagging thier off switches. &quot;So much for pacing myself.&quot; Daiku said as he felt himself recharging from the sunlight.*
+
+<span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">08-Jun-19 04:51 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki was caught off guard by the robots coming from above, falling onto the ground. As he saw the robots falling towards him, he inflated his arm, slamming it into the ground which sent his body spinning upwards. He used the spinning force he built up to deliver a kick to a robot directly above him, pushing it to the side. He then springboarded off from it, rocketing towards another robot beside it, just barely managing to trigger it&#39;s off-switch before landing on the ground again. He looked around, smiling</em> 
+&quot;Well, this is fun!&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">after mike had taken care of the 5 robots he thought he was done. just about as he was about to move out, he heard 2 of the small robots standing up and moving towards him.
+&quot;good grief, you really want a thrashing don&#39;t you. You mechanical duds.&quot; He said to the 2 TRS&#39;s
+And after that statement he moved on of the TRS into the other TRS. After that he went to the robots and pressed the button to make sure they were down. 
+&quot;Finally you duds are dead&quot; He said to them. 
+After that he thought to himself <em>there should be some other people here. I should proboly find them to better my odds</em> and he say some buildings and he had a idea.
+Mike went into a local tall building and went up the stairs untill he got to roof and yelled:
+&quot;ANYONE HERE?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="08-Jun-19 05:07 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Tag me not Deg))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((done))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:20 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((mike yells. Robots immediately swarm him. Lol jk))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:27 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>One robot Aya didn’t see came towards her from a street to her side as she was running towards Daiku.</em>
+<em>Daiku’s laser attacks were very effective, disabling the three TRS with ease. There were still around 5 still standing</em>
+<em>Several robots were still near Haruki</em>
+<em>Mike’s yelling attracted the attention of a few robots, but unable to find the source, they continued to walk around the training grounds.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:54 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((do these robots attack back? how?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">08-Jun-19 05:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((They try. However they are extremely vulnerable due to the buttons))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">08-Jun-19 06:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((they mostly utilize their numbers and fists. But they are pretty easy to defeat))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">09-Jun-19 07:30 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">He didn&#39;t get any answers from what he asked to Daiku- knowing it was probably a wrong time, Reijiro decided to move away, and watched the laser fire from his finger. Turning around to find something else to do, he spotted robots aiming for nothing, just wandering around, and so he charged after them. He punched one at full force- and then noticed that he was using his hardest punches on these weaklings. They had turn off buttons on them..
+
+Not moving, as he was stuck in thought, a robot gave a small punch to his cheek, and Reijiro toppled backwards, managing to keep up on his legs. He lunged forwards, and grabbed one of the robots, frantically trying to spot the off-switch. He succeeded and turned one of the robots off.</span>
+
+                                <span class="chatlog__edited-timestamp" title="09-Jun-19 07:31 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">09-Jun-19 07:51 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As the exam continues, the prospective students noticed that these first round of robots, the TRS, seemed not to pack too much of a punch. They mostly tried to strike with their fists, but didn&#39;t land often. And even when they did, they didn&#39;t hurt as much as one would think.
+The fan-kid landed near Daiku, after hearing his quip.
+&quot;No kidding&quot; he said. &quot;Thought I&#39;d just wreck up a bunch, but they don&#39;t seem to be slowing down&quot;.
+Suddenly, he heard from the top of the building somebody shout &quot;anyone here?&quot;
+<span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="09-Jun-19 07:59 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">09-Jun-19 09:38 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya turned sideways to skid to a stop while her left arm had spines growing out of them again. She threw her arm up using the momentum to throw them at the robot hitting one if the deactivation buttons.</em>
+<em>She continued heading in the general direction of Daiku and fan boy and heard someone shouting from a nearby building.</em>
+
+ <span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">09-Jun-19 11:05 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku nodded at the &quot;fan boy&quot;.</em> &quot;Maybe if we could get them to come to one location or bottleneck them somehow .&quot; <em>Daiku heard a person yelling.</em> &quot;I thought this was just a combat test. Are we doing rescue as well?&quot;
+
+<span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">09-Jun-19 11:16 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked around at the various other robots that remained standing</em> 
+&quot;Man, you guys just keep comin&#39; and comin&#39;!&quot; 
+<em>He calmly inhaled through his nose and exhaled through his mouth, probably in an attempt to calm the adrenaline currently surging through him. Suddenly, he inhaled deeply, inflating his legs. He jumped towards one robot that was directly in front of him, drop-kicking the off-switch. He then, in the same motion, launched himself towards a robot beside it, repeating the same move again. He kept doing the same thing, pinballing between the robots until all of the ones that had tried to jump down on him from above were deactivated. Suddenly he heard someone yell. He looked around, wondering where the voice came from.</em>
+&quot;Is someone in trouble?&quot;
+<em>He looked around one last time before continuing to run through the area, deactivating robots as they appeared</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">09-Jun-19 11:21 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">as Mike was waiting he saw some people heading towards him. But cound not recognize them. So he yelled:
+&quot;Look for the guy with blue sunglasses&quot; to the people comming towards him
+Then mike waited and grab his flask from one of his pockets and waited.
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">09-Jun-19 11:54 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( <span class="mention" title="DoctorTnT#3896">@DoctorTnT</span> Um, a flask?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">09-Jun-19 12:02 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((yeah for water, stay hydrated kids <img class="emoji " alt="😃" title="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png" /> ))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/421378052140826624/1247b1ab7c0fcb44820dcd8320861929.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Comet⚡#6253" data-user-id="421378052140826624">Comet⚡</span>
+                <span class="chatlog__timestamp">09-Jun-19 12:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(<img class="emoji " alt="Ribbiting" title="Ribbiting" src="https://cdn.discordapp.com/emojis/581282883357114368.png" /> )</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">09-Jun-19 02:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((...)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">09-Jun-19 03:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I would&#39;ve saw Aya having a flask.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:21 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>A teacher supervising the exam noted the flask possessed by Mike and took down some notes, intending to have the container confiscated after the exam to be checked for illegal substances.</em>
+
+<em>The second wave had begun, and the new robots were much bigger. Several of the TRS were still out, and more were coming, but the heavier and bigger TRM definitely attracted more attention. They had only a single button, and were making their way to the students.</em>
+<em>One of the robot’s paths had it going near Aya, and it marched forward loudly in her direction, it’s fists in a position preventing easy aim at its single deactivation button. It aimed and launched a taser dart in her direction.</em>
+<em>More of the TRS swarmed Daiku, Reijiro, and the fan-kid, as a second TRM approached the group. It prepared to launch a taser dart at Reijiro.</em>
+<em>A third TRM had arrived in the area near Mike. Its sensors picked up his shout and directed it’s attention onto him. It aimed at the top of the building at Mike and shot a taser dart, the force on the small object enough to make the entire distance towards Mike.</em>
+<em>Haruki was being followed by several of the newly emerged TRS. One of them tripped over the fallen body of its brother and disabled itself.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((These are the big bois. I get to choose if your attacks work... muahaha))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((What are these robots armor composed of?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((All I know is they stronk bois))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Cause Daiku can melt through Steel by heating his body. If its something more durable than that he could melt it with a concentrated blast.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">09-Jun-19 04:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Your heat does not melt the robots. There were created to not be destroyed in that way))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">09-Jun-19 05:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((your blasts can cause steel to become malleable overtime. It doesn&#39;t happen instantaneously. It&#39;s like when you focus a magnifying glass on a leaf. It takes time for it to heat up and start to burn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">09-Jun-19 05:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Ok))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">09-Jun-19 05:11 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((the explosions from your energy attacks landing should be enough to damage TRM pretty well though))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">09-Jun-19 05:17 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((jet fuel can mealt steel beams /s))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">09-Jun-19 07:07 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Pinned a message.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:58 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((yes but I don&#39;t think Daiku can fire jet fuel...))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">10-Jun-19 12:06 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Reijiro saw some larger robots. He- like he did with all the TRS models, simply charged at one, hoping to punch it down easy. The lion boy was excited for the bigger robots- he&#39;d get to use more strength. As he attempted to strike one with a hook punch, it didn&#39;t do the effect he wanted, and then it pushed it with its large palm. He toppled straight over- and from then, knew he&#39;d need to do something.
+
+But of course, another try couldn&#39;t hurt, surely..- he got chucked down to the floor again with another slam. This time, he decided to try and find a switch, but the robot- again- got to him fast and threw him off. He shouted in anger, and charged again. With a small, half complete plan in mind, he ran over to it, threw another punch- but changed direction suddenly and managed to land a punch. The robot was knocked back a bit, stunned- and so Reijiro charged again. Whilst moving towards it, he spotted an off switch and managed to press it.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As he turned around, with a sigh of relief- he spotted another TRM. This one had a laser preparing to fire at him. As fast as he could, he began to charge at it- not having learnt since his first fight with the TRMs seconds ago.</span>
+
+                                <span class="chatlog__edited-timestamp" title="10-Jun-19 12:20 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span> (NPCs)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">10-Jun-19 06:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Nodding to Daiku, the fan-kid shrugged. 
+&quot;Maybe that&#39;s part of the secret &#39;other criteria&#39; Red Mage was talking about?&quot; He questioned before starting his fan blades, levitating. 
+&quot;Let me take a quick peek&quot; he lifted off when suddenly head heard a rumbling. A 16 ft tall machines lurched from behind a building, a swarm of the smaller TRS trailing around it&#39;s legs. 
+&quot;But first, I&#39;ll blow this sucker away&quot; he turned his hands to the machine and let loose a powerful wind, pushing back several of the smaller machines. However, the TRM simply braced itself, skidded a moment, and the look up at him.
+&quot;Uh oh&quot; Fan-kid indicated before the machine reeled back and punched him out of the sky, forcing him into a lower floor of a building across the street</span>
+
+                                <span class="chatlog__edited-timestamp" title="10-Jun-19 06:32 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((@Neko <img class="emoji " alt="🐱" title="🐱" src="https://twemoji.maxcdn.com/2/72x72/1f431.png" />|<img class="emoji " alt="🦇" title="🦇" src="https://twemoji.maxcdn.com/2/72x72/1f987.png" />Ketsuki Kyū so what are the TRM robots look like?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Big bois. 16 ft tall))</span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/559889478051692564/587787173671993344/image0.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/559889478051692564/587787173671993344/image0.jpg" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((This is the smol bois. Only 7ft))</span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/559889478051692564/587787272309440512/image0.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/559889478051692564/587787272309440512/image0.jpg" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((TBH remeber hearing from kampy there were robo dinos))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((yeah, I had to switch that around a bit.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((KK so which ones were the ones shooting those taser darts))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">10-Jun-19 07:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Bigguns))</span>
+
+                                <span class="chatlog__edited-timestamp" title="10-Jun-19 07:44 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((TRM))</span>
+
+                                <span class="chatlog__edited-timestamp" title="10-Jun-19 07:44 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">10-Jun-19 08:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>heard the stomping of the TRM coming in her direction.  As she was running and turned to look where the robot was coming from the taser dart flew and pierced into her arm sending a shock into her.  Once she felt it her spines in the area came out pushing it out of her skin.</em>
+&quot;Mother fu-&quot;
+<em>Aya tumbled on the ground blood on the concrete from the skid.</em>
+<span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:12 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku watched as the fan-boy and the &quot;fanboy&quot; leapt into the fray. He watched as Reijiro got took out by one of the big guys and and then the fan boy was smacked out the air. Sixteen feet of metallic muscle just knocked two heavy hitters aside. Reijiro was trying again.</em> &quot;Clear the way!&quot; <em>He screamed out. Daiku sat there poised with his hand with the palm outstretched to at the TRM that gave everybody else a hard time, charging energy up. The turbine boy cleared the area of the small fry so Daiku didnt have to worry about an attack but he did see them flanking behind the big one. The TRM made its way closer and closer to Daiku, when it was almost point blank to Daiku and went to strike him Daiku released a large energy blast to blast legs from out under the TRM and to obliterate any TMS following behind, hoping he doesn&#39;t strike Reijiro in the process.</em>
+
+<span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:44 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((IM FIREING MY LAZOR BAAAAAAAAAAAAAAAAAAAAA))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Shoopdawhoop))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Please don’t))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 09:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((kk))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">10-Jun-19 11:14 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Things are heating up tbh))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">11-Jun-19 08:34 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Oh, sorry, looks like you were already tagged my bad))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">11-Jun-19 08:35 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Its okay to double tap))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">11-Jun-19 08:58 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki looked around, spotting a big robot</em> 
+&quot;Oh wow, that&#39;s a big one&quot; 
+<em>He walked towards it, happily smiling</em> 
+&quot;Let&#39;s see what you got!&quot;
+<em>He started to run towards it, looking around at the nearby buildings. Finally, he got close enough. He inflated his legs, rocketing towards the big robot. His plan was simple : Pinball. He directed his legs towards the robot and attempted to bounce off its big body and towards one of the nearby buildings</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">11-Jun-19 10:22 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As mike was waiting he heard something flying towards him. He turned around to see a stun dart flying at him. Quickly he moved his flask to intercept the dart. Which ultimately damages the flask.
+“Cheap ass flask”  he said to himself.
+Then he went down the stairs to see the TRM and though
+&quot;This is gonna be fun&quot;
+And at first he tried to lift him but try as he can he couldn&#39;t lift the TRM. So mike had to try something new. So he saws the robots first and came up with a plan. So Mike locked the TRM and pulled one of the first of the TRM with all his might. With whatever concentration he had left he used the TRM&#39;s fist and just punched the robots face until it stopped moving. Then when the robot was deafeted he let go and the TRM fell down onto the ground. Mike,while completely exauseted said.
+&quot;well then talk about a new meaning to hitting yourself&quot;. he said to himself
+He returned back to were he was before when he saw a huge beam of light and said
+“Bingo. not what I planned but this can work.”
+He went down the stairs and sneaked his way through alleyways until he was right behind the others. 
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="11-Jun-19 11:34 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">11-Jun-19 10:24 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((How did he drop the TRM off the building?))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Wait no he can’t lift the TRM edit your post))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">11-Jun-19 10:27 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Kk one sec just woke up))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Also how heavy are the TRMs?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">11-Jun-19 10:31 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I can’t find the weights rn, I just know they are over 400lbs))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:10 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((s=360
+M= 750))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:35 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((@Neko <img class="emoji " alt="🐱" title="🐱" src="https://twemoji.maxcdn.com/2/72x72/1f431.png" />|<img class="emoji " alt="🦇" title="🦇" src="https://twemoji.maxcdn.com/2/72x72/1f987.png" />Ketsuki Kyū done))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((you desperately wanted a zinger, huh? Lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Zinger?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:48 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((first the Newton line then the hitting yourself line. I guess quip was more accurate. I just found it amusing))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">11-Jun-19 07:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>The many TRS that were near the TRM surrounded Aya.</em>
+<em>Haruki’s plan was stopped short when the TRM grabbed him and threw him on ground, not hard enough to hurt him though. Some nearby TRS approached Haruki, ready to attack.</em>
+<em>Daiku’s attack didn’t work quite as well as he thought it would. He was able to blast the TRM’s legs, making it fall over. This, however, attracted two more TRM and many TRS to the area, closing in on Mike, fanboy, and Reijiro.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:01 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I see Aya having a Momo moment soon))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">11-Jun-19 11:05 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((When u see more TRMs: chuckles I’m in danger))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">12-Jun-19 11:04 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Finally managing to hit the TRM&#39;s power-down button- he found it whilst in attempt to give it a firm slap across the face (it failed- he was thrown off it.), it fell to the floor. 
+
+Looking around for more potential targets- he spotted Daiku again. The teen fired an attack- but it seemed to have failed and attracted a LOT of robots- <em>they were coming to the lion boy himself, and a two students around him.</em>
+
+He shouted out to the two. &quot;WE NEED TO WORK TOGETHER!&quot;. Looking at the two- one with fans and the other with an unknown Quirk. However- he couldn&#39;t piece an idea together, apart from a.. fan elevated charge?. It all depended on what the other guy had for a Quirk.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span> (NPCs)</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((out of RP- I&#39;m thinking that maybe Mike could slam Reijiro into the robots whilst Fanboy acts as a distraction))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Jun-19 11:25 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Daiku didn&#39;t necessarily <em>fail</em>, right? He did good damage, it just attracted a bunch of opponents?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 11:26 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Thats how I read it. I knocked it down but Its not out of commission yet and small guys are starting to swarm))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Jun-19 11:47 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Fan kid stood up, body aching.
+&quot;Okay, that wasn&#39;t fun&quot; he groaned as he rubbed his head, wincing at a cut on his temple. Looking forward, he saw one kid fire an energy shot, taking the medium bot out at the legs. He then heard another of the teens, this one taller and... hairier, saying they need to work together. Testing his fans, he found them luckily undamaged. He stumbled slightly, before running back to the battlefield. 
+&quot;I can blow the small ones around, but that big guy is way too guarded. He just plants his feet and I can&#39;t pick him up&quot; he shouted, making his way toward the group.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">12-Jun-19 12:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya was on the ground surrounded by a bunch of the TSMs.  Her arm was bleeding pretty good.  She had a small smirk on the corner of her mouth as spines started coming out from all over ripping out of her clothes.  She would then jump to her feet shooting out the spines in all directions around her hitting off buttons.</em>
+<span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 01:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku was proud of himself until the moment he saw the TRM toppling over towards him. He used his quirk for a quick burst of speed to launch himself off to one side to avoid being crushed underneath the bulk of the robot. He then heard Reijiro&#39;s plea for cooperation. Daiku surveyed the scene and the area was getting flooded by the smaller units. He ran to slap the off button of the TRM he disabled and got on top of it for a raised position of advantage.  He started thinking to himself about how he could get things to work in their favor as he blasted TRS bots trying to reach him. Making his shots count as he took out multiple ones with one shot. He took in a shallow breath and looked toward Reijiro.</em> &quot;Hey Mane-man! Bring them toward the building here.&quot; <em>He pointed behind him to the office building that was still standing.</em> &quot;Have them follow us in and let their numbers be their undoing.&quot; <em>Daiku yelled it out loud enough for others exam participants to hear him over the ruckus as well. He then looked up at the fan boy. &quot;Hey! You think you could give some of the other students cover while they get in the building?&quot; *Daiku would then make his body start glowing like it did before at the villain attack at the mall. This time his clothes didn&#39;t burn as they were made with this in mind by his mom. Daiku glowed as bright as he could to get everyone&#39;s attention without being a detriment to their vision. &quot;EVERYONE RALLY ON ME!&quot; *Daiku stood there waving his arms charging for an even bigger blast to be released once everyone was behind him.</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="12-Jun-19 01:42 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">12-Jun-19 01:36 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((btw TSM?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 01:42 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((oof))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">12-Jun-19 01:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Like are TSM = TRM))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 01:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Yeah ))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Jun-19 03:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((so, Daiku blowing his lead early?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 05:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((There&#39;s still sunlight. He will recover by round four most likely and get to save the day lol))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Jun-19 05:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((he charges that fast?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">12-Jun-19 05:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Depends on if the sunlight is direct enough and how much skin is showing. He probs gonna pull a Mirio at some point so he can get back into the fray))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">12-Jun-19 05:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((administrators be like: nani da fuck))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">12-Jun-19 06:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((well Aya ain&#39;t too far off from doing that lol.  Full offense mode atm))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">12-Jun-19 07:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((when u relise Aya is the only female kapa))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">13-Jun-19 07:15 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((hey <span class="mention" title="PimpShrimp#1697">@PimpShrimp</span> hope you didn&#39;t forget ur turn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">14-Jun-19 06:45 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Thanks for reminding me))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki hit the ground on his back</em> 
+&quot;Well, that didn&#39;t work...&quot; 
+<em>He looked around at the surrounding TRS, then at the TRM. He cracked his knuckles as he looked at it</em>
+&quot;Now things are getting fun!&quot;
+<em>He ran towards it, his legs inflating. This time he flew towards its legs, with the aim to go in between them and get behind the TRM</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">14-Jun-19 04:02 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((sorry for the wait for my reply, life is a pain, so i want to ask if we can in RP communicate with the other OCs?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">14-Jun-19 04:37 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((if you are near other players, yes. If you want to RP a NPC you will have to discuss it with your mod))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">14-Jun-19 04:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((so do i just @ them in that case? or))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">14-Jun-19 05:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((just notify them in their DMs that you spoke to them))</span>
+
+                                <span class="chatlog__edited-timestamp" title="14-Jun-19 05:18 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">14-Jun-19 05:23 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((so do i need to DM first then @ them?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">14-Jun-19 05:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((you shouldn&#39;t have to @ them at all. if they know your character is going to talk to them then they should react on their turn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">14-Jun-19 07:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As mike was traveling he saw 2 other people. He was about to introduce himself when 2 TRMs and multiple TRS surrounded them. Infront of mike were the 2 TRM&#39;s. Behind him was a kid who resembled a lion, a kid with fans who look somewhat ingoured, and a hoard of TRS&#39;s. Before Mike could start to fight the lion looking kid told him and the fan kid that they need to work together. But later he heard a kid tring to gather up everyone to a building. Not knowing what his plan was he decided to roll with it. Then he said
+&quot;HEY, lion boy take that injured fan kid with you to that building and lead those TRS&#39;s with you. I can take care of these TRM&#39;s myself since I had taken care of one before, I can do it again. Also before you take off my name is Mike. You prob know me for the kid that was screeming at the top of a building looking for the rest of you gents. I will catch up with you guys later. Now go!&quot;
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">15-Jun-19 04:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">15-Jun-19 09:08 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((time to wait))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">15-Jun-19 09:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((love how Aya is by her lonesome XD))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">15-Jun-19 10:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((laughs in mike))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">16-Jun-19 06:27 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Guys, I a sleepy Neko. You gotta be patient))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">16-Jun-19 07:55 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>After his shout, Mike was swiped at  by the fallen but not deactivated TRM, as the deactivation button had been damaged and did not work when Daiku triggered it.</em>
+<em>The newly approached TRM and many TRS were closing in on Daiku, Reijirou, and Kanki.</em>
+<em>Aya was able to deactivate several TRS, but the TRM remained a threat. It was still recharging its taser dart, so it walked forward and swung down in an attempt to capture Aya.</em>
+<em>The TRM attempted to hit Haruki with its taser darts and fists, but was unable to target him as he went between its legs.</em>
+
+((Fan-kid is named Kanki Bōku. Your characters don’t know this but I was getting tired of calling him “Fan-kid”))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">16-Jun-19 08:06 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Would it be safe to assume that the off-switch on the TRMs is located on their backs?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">16-Jun-19 08:07 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((It’s on the front. Kampy would know the more specific location. However, it is difficult for the TRM to attack someone who is behind them))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">16-Jun-19 08:09 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Daiku is standing on the back of the TRM that has the broken switch by the way.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">16-Jun-19 08:09 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Okay that complicates things for Haruki. Time to pull out some balloon gymnastics.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">16-Jun-19 08:09 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Nice. The thing can’t get up, but broken bot did attempt to swing at Mike because it was the only thing it could target))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:59 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">17-Jun-19 02:09 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Without any questions, he put his two fingers to his fore-head and then swept them off, in a &#39;roger!&#39; sign. Straight after, Daiku began to glow- which Reijiro looked in awe- only for a few seconds. As hard as he wanted to fanboy at being told to do something by Daiku in a friendly manner, he couldn&#39;t- his education and career future depended on it.
+
+With such a goal in mind, his Quirk was in full flare, and he ran as fast as he could around the surroundings, slamming bots in their heads to get their attention. He didn&#39;t want to guide them away from the goal. The bots surrounding him at the time helped- more bots, more chance of Daiku&#39;s plan working. Although- the lion teen couldn&#39;t tell what he was planning.
+
+With a giant horde of bots stumbling after him, he began to make forward for the office building. He ran straight inside, smashing the doors down with his strong push, and ran inside. He stood there- and then had no plan on how to get out. He was cornered, and with it being an office building- a thing he hated to think about, he didn&#39;t have the ability to create a plan... except.- AH.
+
+Reijiro grabbed onto some of the decorations in the lobby, and brought them along with him to the stairs. Now, blockading the stairs with them would allow him to escape and keep them contained- and on the second floor, he&#39;d smash the window and leap out... hitting the ground hard.
+
+Exclaiming in pain, he tried to get up, but struggled. &#39;Ow! Owowowow!&#39;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span> (NPCs)</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((oops so many &#39;he&#39;s))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">17-Jun-19 05:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Taking off into the air, Kanki headed towards the group of robots.
+&quot;I&#39;m going to need someone to cover me!&quot; He said, responding to Daiku. Weaving above the TRS which hadn&#39;t followed Reijiro, and the TRM which were lumbering along, he reversed his hand fans, creating a powerful suction force. The TRS began to slowly lift off the ground, caught in his vortex. The TRM anchored themselves to the ground and slowly pointed their weapons up at him.</span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Jun-19 06:59 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">17-Jun-19 06:53 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya saw the TRM&#39;s hand coming down at her and did a tuck and roll forward.  She&#39;d barely get out of the way.  While she was rolling, she grew spines on her forehead and arms, started started flinging them upward towards it&#39;s torso. 
+She could hear Daiku calling for everyone to come towards him and the others destroying TSM&#39;s while trying to get to Daikus location, but Aya was kind of in a bind.  She wasn&#39;t the fastest runner and had a big bot keeping her attention on it really well.</em>
+&quot; There&#39;s no way they think I&#39;ll get there and not get stopped at every damn corner.&quot;
+<span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 07:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">17-Jun-19 09:48 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Um... what? No))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Please back down on Daiku’s power a bit. This is way too much for a teenager with zero training))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Rewrite your post. Pimp can go once you’ve made it a little more realistic for Daiku’s current level))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 09:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Okay I&#39;ll have him blow the floor then.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">17-Jun-19 09:59 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((How?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:00 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Shooting out some weight bearing walls ))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:01 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((With what? His lasers? Those are fine for knocking over or destroying small things. It’s not gonna do much to a wall))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:21 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Better?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:33 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Why it not updating))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">17-Jun-19 10:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku continued to charge and glow while everyone scrambled around the place trying to make his way toward him. He was getting pretty up there in tempature at this point causing literal heat waves to flow from his body for mirage effects. His internal tempeture was around 2100 degrees Fahrenheit. Daiku&#39;s body was superheating the air about a foot around him. Daiku was able to not get touched. His heat was able to heat the shells of TMS units got close. They were weakened enough for Daiku to just punch through them. Daiku was able to fall back with Reijiro as the swarm kept coming. Daiku was beating robots with  the arm of another TMS unit he took out. He followed Reijiro into the office building and started holding them off while the lion boy got the idea to clear the building through the second story building. Daiku was now assured that he was alone and just let loose. Daiku was ready but he didnt think the energy he was gonna release was gonna bring the house down. He hoped his attack was enough to take out the swarm. Daiku concentrated his attack down the hallway trying to hit as many bots in one try. Daiku tried to adjust on the fly but his output was more than he was use to and it cut sharply through the ceiling hitting an active gas line. (What teacher put an active gas line in a training area?)Between his heated blast, the explosion and the debris of the building he had a good chance of taking them out. A cloud of dust, fire and bright light filled the second floor. Daiku, himself was thrown out the window behind Reijiro by the force of the attack. He landed on his back and rolled over to his stomach, his body smoking and his clothes slightly singed. He looked over to Reijiro.</em> &quot;You okay?&quot; <em>He was slightly out of breath and smiled at Reijiro. Daiku looked around for Kanki. He knew he and Reijiro was gonna need some protection at this point.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">18-Jun-19 09:23 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Seems like you used a pretty powerful move. You’re good but you’re probably drained for the rest of the exam. We can roll though for recovery <img class="emoji " alt="😃" title="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png" /> ))</span>
+
+                                <span class="chatlog__edited-timestamp" title="18-Jun-19 09:23 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">18-Jun-19 09:26 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Crossed fingers I roll well to at least get back in for the fourth wave. Until then gonna run and play like Deku))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">18-Jun-19 02:28 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((if you mean a d!4 roll, then maybe it should be
+
+1: No recovery.
+2: No recovery.
+3: Small recovery.
+4: Large recovery.))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((just an idea))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">18-Jun-19 05:19 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Would any of my skills affect it?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">18-Jun-19 05:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Maybe. Neko is gonna decide eventually))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">19-Jun-19 06:23 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki flies between the legs of the TRM, angling his body so that his legs would hit the ground first. When he does, he bounces back towards the TRM, this time aiming for it&#39;s shoulder, trying to bounce off it and pinball from a nearby building towards the off-switch from the side, readying himself to roundhouse kick it</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="19-Jun-19 08:54 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">19-Jun-19 11:40 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((also i want to say in advance that since i got a summer job it may delay my posts here just as a FYI))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">20-Jun-19 06:26 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((if you find that you need to skip your turn, just let us know.))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">20-Jun-19 01:55 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">as the TRS walked away mike was about to deal with the 2 TRM. But on closer inspection 1 of the TRM had only one leg and was already damage. 
+&quot;Well then, I thought I was suppose to take one 2 not 1.5 TRMs. What a let down&quot; he said to himself
+So he locked the weakened TRM and ripped of his fist like with the first TRM he fought. Then with that fist he try to destroy the other TRM by punching it in the face with the TRM fist. After the stronger TRM was takend cared of he took out the weaker one. After that he thought of a idea. SO he took of the other arm off the weaker TRM and carred both of them with him as he went to the office building. 
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">20-Jun-19 02:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Neko has stuff to do. She can’t post until tonight))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">20-Jun-19 05:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Kk don’t get any catnip neko))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">21-Jun-19 05:25 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Am I good to control your character <span class="mention" title="Deg-kun#9768">@Deg-kun</span> , or would you like Kampy to?))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">21-Jun-19 05:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((since you&#39;re the mod, I don&#39;t mind if you do. But i can if need be))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">21-Jun-19 05:27 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I’m a little iffy on controlling characters I didn’t create, so I guess you’ll be double dipping in your next turn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">21-Jun-19 05:30 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I&#39;ll just roll his turn in with the other npc))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">21-Jun-19 05:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>A loud noise could be heard near Daiku and Reijiro; a TRL was near, seemingly out of nowhere. Many TRS approached, and were followed by several TRM. This was the beginning of the third wave. Five TRS took a path towards Aya. The TRM closest to her finally was able to use its taser dart again, and fired while reaching down for Aya. However its new position made its deactivation button in the perfect position to be hit by one of Aya’s spines, deactivating it.</em>
+<em>The TRM near Haruki was confused, and waving its arms around in an attempt to hit Haruki. On the ground, many TRS were walking by, but they were mainly headed to where the most teens were gathered.</em>
+
+((Third wave begun. I’ll give y’all a chance to react. Just tell me what you do, when my turn roles around you’ll get to see what happens. Since this is seconds after the previous round, Valas is unable to use his quirk this turn; you can role for recovery starting your next turn))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Kampy#4941">@Kampy</span> (Reijiro and NPC)</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((It’s this big boi. 32ft tall))</span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/559889478051692564/591750088238301184/image0.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/559889478051692564/591750088238301184/image0.jpg" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">21-Jun-19 06:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Reijiro watched with awe as explosion in front of him rocked the building he had just been in. Daiku rocketed from the building and landed in front of Reijiro in a heap. 
+He almost didn&#39;t hear Daiku ask if he was okay. Star struck was an understatement. He shook his head as he responded. 
+&quot;Oh, yeah, I&#39;m fine. A little glass won&#39;t stop me&quot; he tried to puff his chest but coughed a bit and pulled a small piece of glass from his clothing. 
+&quot;You were so cool! I wasn&#39;t sure it was going to work but you totally played them!&quot; He exclaimed, feeling a bit embarrassed to stroke Daiku&#39;s ego, but feeling too much adrenaline to care. Suddenly, the ground trembled. From behind a building, a lumbering figure emerged. 
+Kanki landed near the two. 
+&quot;Okay, got any more left in you sun-guy? Cause I can&#39;t even lift the medium ones.&quot; He said, pointing toward the TRL. His fans began to rotate as he levitated a few inches off the ground. 
+&quot;I&#39;m going to try and scout it out&quot; he said, taking off towards the large robot. 
+Reijiro punched his fist into his hand &quot;you shg back a sec, Daiku. I&#39;m gonna take some inspiration from you and show off a bit now&quot; he said, before charging forward and leaping at the machine, zooming past Kanki.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Usakiya Hayashi#0583">@Usakiya Hayashi</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">21-Jun-19 07:43 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Aya watched as the spines flew up at the robot as he was lowering his arm and  taser dart at the ready.  She&#39;d notice one of the spines hit the target on the TRM just in time to not get hit by it.</em>
+&quot;Phew that was close.  Damn I need to get to the others.&quot;
+<em>After her short celebration she would continue to head towards Daiku and company.  Of course, as she was making her way to them more TRS showed up.  She&#39;d try to outrun them as much as she could but they were close on her tail.  As she&#39;d run she would grow more spines but from her back to try and shoot at them before she would need to stop.  At this point her top is torn to shreds.</em>
+<span class="mention" title="ValasAlGeralt#4355">@ValasAlGeralt</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="24-Jun-19 01:55 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">21-Jun-19 07:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(is Aya topless?)</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">21-Jun-19 08:03 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Daiku felt a little weak after he caught up with himself and the adrenaline fell off. He heard Reijiro start showering him with praise in reaction to that, Daiku blushed and looked down.</em> &quot;I-i guess it was.&quot; <em>The ground trembled and shook Daiku&#39;s balance. Kanki flew down and the sun powered teen gave a weak chuckle to him.</em> &quot;I gotta recharge. I popped my wad on that one. Hopefully I recharge fast.&quot; <em>Daiku got himself to his feet as Kanki and Reijiro went into battle. He started running to another tall building to make his way up to the roof and get some sun. He picked up a iron pipe about two thirds his size and carried it with him.</em>
+<span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="21-Jun-19 08:03 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">21-Jun-19 09:38 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((So this has to be the perverted group. Two people are topless and one is about to get fully nude in a bit))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/467573591207182337/46bc4de17408db849ee411c5de7c7070.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="ValasAlGeralt#4355" data-user-id="467573591207182337">ValasAlGeralt</span>
+                <span class="chatlog__timestamp">24-Jun-19 10:24 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="PimpShrimp#1697">@PimpShrimp</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/319471764675624960/56186e17f480a396a33c5d77243c588d.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PimpShrimp#1697" data-user-id="319471764675624960">PimpShrimp</span>
+                <span class="chatlog__timestamp">24-Jun-19 10:31 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>Haruki bounced from the nearby building and flew towards the TRM. He managed to barely move his body out of the way of one of it&#39;s arms and delivered his kick to the off-switch. He looked around at the surrounding TRS.</em> 
+&quot;I wonder where they&#39;re going...&quot; 
+<em>He took a couple of deep breaths and started bouncing from TRS to TRS, going in the direction they where heading. Soon he spotted the other teens and a TRL, which he targeted and bounced towards</em>
+&quot;You guys need help taking down that big guy?&quot;</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="DoctorTnT#3896">@DoctorTnT</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/141019311341830144/1f75dc2bc7e9e4340a46e96547fe9cb8.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Usakiya Hayashi#0583" data-user-id="141019311341830144">Usakiya Hayashi</span>
+                <span class="chatlog__timestamp">24-Jun-19 01:39 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((I would imagine she has one of those strapless bras))</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((or those breast binding wraps))</span>
+
+                                <span class="chatlog__edited-timestamp" title="24-Jun-19 01:43 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">24-Jun-19 07:31 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">As mike was walking around carrying the 2 TRM fists. He saw the Huge TRL and had a quick idea. He said to the TRL
+&quot;HEY, you mechanical titan, heres your order of a double knuckle sandwitch&quot; 
+As the TRL turned around to face Mike. 2 TRM fist hit the sides of the TRL head. Causing some damage to the face but not enough to take out the TRL. The mike said to the others around him
+&quot;Hope you gents have a plan cause i&#39;m about to get a bit serious right now. Let&#39;s have some fun shall we gents.&quot; He said with a smile
+<span class="mention" title="皿猫#0809">@皿猫</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">25-Jun-19 10:22 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((things are heatting up alright))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/204053985836007433/df747614c45c1a674eb30337fe01c3ed.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="DoctorTnT#3896" data-user-id="204053985836007433">DoctorTnT</span>
+                <span class="chatlog__timestamp">26-Jun-19 07:57 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">(( <span class="mention" title="皿猫#0809">@皿猫</span> ))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">27-Jun-19 05:50 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((Yay everyone is in the same place my plan has worked))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/283668559152807937/bffe7155a296eaa2049acf64e9ceb936.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="皿猫#0809" data-user-id="283668559152807937">皿猫</span>
+                <span class="chatlog__timestamp">27-Jun-19 06:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><em>The TRL noticed Reijirou, and released a large concussive blast, pushing Reijirou, Mike, and Haruki, who has just appeared, backwards. It was big and slow, but its attacks packed a punch. Kanki was out of the bot’s range and was not affected.</em>
+<em>The others were pursued by TRS, but as they defeated the smaller bots they would noticed that no new bots were making an appearance to replace them.</em></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention" title="Deg-kun#9768">@Deg-kun</span> ((Please read Kampy’s post he made for you before you post your turn :)))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/320453745534173184/405517a9abc34b70db24f81b87872729.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Deg-kun#9768" data-user-id="320453745534173184">Deg-kun</span>
+                <span class="chatlog__timestamp">28-Jun-19 10:10 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">((sorry for the wait I&#39;ll be doing it soon but I can&#39;t rn))</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

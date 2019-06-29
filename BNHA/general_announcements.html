@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>r/BNHA_OC_Characters - general-announcements</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/248906831710126081/685503699a7cdd0d5b89223699936642.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">r/BNHA_OC_Characters</div>
+        <div class="info__channel-name">general-announcements</div>
+        
+            <div class="info__channel-topic"></div>
+
+        <div class="info__channel-message-count">27 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">24-Oct-18 05:24 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> an updated post on requirements for submissions on entering the tournament</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><a href="https://www.reddit.com/r/BNHA_OC_Characters/comments/9r3v8a/clarification_on_rules_for_entering_the_contest/?">https://www.reddit.com/r/BNHA_OC_Characters/comments/9r3v8a/clarification_on_rules_for_entering_the_contest/?</a></span>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,255,255,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.reddit.com/r/BNHA_OC_Characters/comments/9r3v8a/clarification_on_rules_for_entering_the_contest?"><span class="markdown">Clarification on Rules for entering the Contest • r/BNHA_OC_Char...</span></a>
+                                            </div>
+
+                                        <div class="chatlog__embed-description"><span class="markdown">Hi everyone, there seems to be some confusion regarding the rules and how to enter so this post looks to clear any questions you may have right...</span></div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="https://external-preview.redd.it/c3S7qEINI4k1VcLmEgu9UCZkbOCH--V1YCM-Qh3AKBg.jpg?width=320&auto=webp&s=4677584c794422d71bc635ea8aa8413aa15d2d06">
+                                                <img class="chatlog__embed-thumbnail" src="https://external-preview.redd.it/c3S7qEINI4k1VcLmEgu9UCZkbOCH--V1YCM-Qh3AKBg.jpg?width=320&auto=webp&s=4677584c794422d71bc635ea8aa8413aa15d2d06" />
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Hi everyone, there seems to be some confusion regarding the rules and how to enter so this post looks to clear any questions you may have right up!
+
+<em>Do they have to be year 1?</em>
+
+* No, they can be year 1-3, no adults this tournament though
+
+<em>When is the deadline exactly?</em>
+
+* It&#39;s being pushed back to Sunday the 4th of November at 11.59pm GMT. 
+
+<em>Do I have to fill in the entire sheet?</em>
+
+* Yes, as much as possible as it also gives your OC better chances at winning!
+
+<strong>Any other questions feel free to ask in the comments or in my messages!</strong></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">03-Nov-18 07:56 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> I updated a post, there&#39;s also now a proper Prize for winning!
+
+<a href="https://www.reddit.com/r/BNHA_OC_Characters/comments/9tti7f/update_on_prize_final_post_before_competition/?">https://www.reddit.com/r/BNHA_OC_Characters/comments/9tti7f/update_on_prize_final_post_before_competition/?</a>
+
+&quot;Hi everyone,
+
+I&#39;ve managed to secure myself a copy of Endeavor for One&#39;s Justice on Switch, so that will also be the #1 Winners Prize
+
+Make sure to get your entries in before midnight GMT+0 (UK Time) on Sunday the 4th!&quot;</span>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,255,255,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.reddit.com/r/BNHA_OC_Characters/comments/9tti7f/update_on_prize_final_post_before_competition?"><span class="markdown">r/BNHA_OC_Characters - Update on Prize + Final Post before Competi...</span></a>
+                                            </div>
+
+                                        <div class="chatlog__embed-description"><span class="markdown">1 vote and 0 comments so far on Reddit</span></div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="https://external-preview.redd.it/c3S7qEINI4k1VcLmEgu9UCZkbOCH--V1YCM-Qh3AKBg.jpg?auto=webp&s=3e72d342623188d4efcb37612ba1a890eb5a3647">
+                                                <img class="chatlog__embed-thumbnail" src="https://external-preview.redd.it/c3S7qEINI4k1VcLmEgu9UCZkbOCH--V1YCM-Qh3AKBg.jpg?auto=webp&s=3e72d342623188d4efcb37612ba1a890eb5a3647" />
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">05-Nov-18 03:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">The competition will start at 9pm GMT+0 and cycle through day by day until we reach the end, should take around 2 weeks to fully complete the competition! 
+
+I&#39;ve made a handy fight list so you can see who will be fighting who, I&#39;ll be providing links after this initial picture in <span class="mention">#deleted-channel</span>, the order of the links will be going left to right, so if your student is the 3rd box, they will be the 3rd link etc
+
+This picture will get updated once every day in <span class="mention">#competition</span> at 9pm GMT+0 when the changeover happens</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/502196854310699009/509103843544662018/Sports_green.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/502196854310699009/509103843544662018/Sports_green.png" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">05-Nov-18 03:58 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">The competition is Officially underway! <span class="mention">@everyone</span> 
+
+All you have to do is <strong>react</strong> to the character you want to win, the most votes after 24 hours wins the fight and moves on to the next round!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">21-Nov-18 03:47 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> competition is over! thanks for taking part, look at <span class="mention">#competition</span> to see who won, what they won and etc</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">16-Dec-18 08:11 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Hi <span class="mention">@everyone</span> , Christmas Competition Time!
+
+This time it’s holiday themed, not necessarily Christmas themed, but the best holiday related hero wins! This could be the outfit, the quirk, etc! Just make sure it’s designed by you!
+
+Link me via PM(messaging me) your OC and after New Year’s I’ll post all OC’s submitted into the <span class="mention">#competition</span> channel on our discord! The most votes/reactions after a week the best/most voted one wins! 
+
+They’ll get a custom discord flair and subreddit flair for being the Christmas Winner! <em>(I also have a spare PS4 Endeavor Code if the winner wants it)</em>
+
+<strong>May the games begin!</strong></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">28-Dec-18 10:18 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> 3 days left, get your submissions in!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">31-Dec-18 04:34 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> a few hours remain! get your Christmas competition stuff in now!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">01-Jan-19 07:01 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> links are in, react which one you think is the best holiday themed OC in <span class="mention">#competition</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="01-Jan-19 07:01 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">14-Jan-19 07:04 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">If anyone has any BNHA OC RP servers they are in let me know, I&#39;m trying to set something up <img class="emoji " alt="👀" title="👀" src="https://twemoji.maxcdn.com/2/72x72/1f440.png" /> <span class="mention">@everyone</span></span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">14-Mar-19 04:02 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> Hi Everyone! Your friendly neighborhood Kampy here! Who’s ready for a new <span class="mention">#competition</span>?
+This time, we’re going for a more general theme, to allow for maximum creativity. So, the theme will be: “Next member of the Big 3”! Flex your creative skill and come up with a 3rd Year student whose hard work and talents have earned them a spot in coveted “Big 3”.</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="markdown">So, you may be wondering how to submit your character? Well, post your character to the MHA OC subreddit with “Competition Entry” in the title and using the following template: <a href="https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc">https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc</a> Then, DM me with a link to your character.  Please also Enter the MHA OC discord and post a link to your character under the <span class="mention">#oc-discussion</span> section.
+Once a character link has been DM’d to me or added to the OC-Discussion section of the Discord, I will add it to the <span class="mention">#competition</span> section.  <span class="mention">@everyone</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="14-Mar-19 04:05 PM">(edited)</span>
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,255,255,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.reddit.com/r/BNHA_OC_Characters/wiki/makinganoc"><span class="markdown">reddit: the front page of the internet</span></a>
+                                            </div>
+
+                                        <div class="chatlog__embed-description"><span class="markdown">r/BNHA_OC_Characters: Original Characters created by you, or found on the internet, inspired by Boku No Hero Academia/My Hero Academia. 
+
+Please read the FAQ before posting anything.</span></div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Please begin sending in your characters on 3/15/19. Entry cut off will be 4/12/19. 
+Voting will then commence until 4/19/19 through either a link to a poll or a liking system.
+We are limiting each user to a single entry.
+So, what do the winners get, you may be asking? Commissions from the lovely folks at NoodleDoodles!
+1st Place will receive a free, full color full body commission of their character
+2nd Place will receive a free black and white full body commission of their character
+3rd Place will receive a free black and white bust commission of their character
+I will DM winners with instructions on how to claim their prizes.
+So, be creative and have fun!
+<span class="mention">@everyone</span></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Mar-19 08:37 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="😛" title="😛" src="https://twemoji.maxcdn.com/2/72x72/1f61b.png" />
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">15-Mar-19 09:22 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">pogchamp</span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/502196854310699009/556105064910159873/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/502196854310699009/556105064910159873/unknown.png" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">25-Mar-19 08:56 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">We&#39;re approaching the 2 week mark in our Big 3 contest! Hope those of you who have not yet entered are working hard on your characters!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">28-Mar-19 04:16 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><strong>Competition FAQ</strong>
+1) <em>Do I have to use the template from the Reddit for my Competition entry?</em>
+
+- Yes. We prefer you fill out our template to the best of your abilities.
+
+2) <em>Do I need mod/admin approval for a character I submit for the competition?</em>
+
+ - No. You only need mod approval for characters you wish to RP with. You may submit any character you create as long as it follows our template. You may also deviate from the RP limits (must be first year and must have a Total Rating limit of 15) if you intend to only submit a character for the Competition.
+
+3) <em>In the competition, what kind of things should we look for when considering for whom to cast our vote?</em>
+
+- Creativity and descriptiveness are paramount. The stats or who would win aren&#39;t necessarily the important thing when voting in the competition. Instead, they should simply help to enhance what is already written about the character.
+
+4) <em>So, what are the benefits to winning?</em>
+
+- The 3 winners (1st, 2nd, and 3rd place), in addition to their commissions, will be given special roles indicating which place they came in. 
+The three winners will also receive one other benefit that will currently be kept a secret, but it&#39;s a good one.</span>
+
+                                <span class="chatlog__edited-timestamp" title="28-Mar-19 04:17 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">28-Mar-19 04:26 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Note: As the competition requires 3rd years, you will need to modify your character sheet to reflect the limitations of the RP submission rules if you intend on using your competition entry as your RP submission as well.  Simply modify the Year number from 3 to 1.
+
+The RP will open after the competition has ended, so you should feel free to modify your character sheets at that time.</span>
+
+                                <span class="chatlog__edited-timestamp" title="28-Mar-19 04:27 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">04-Apr-19 08:58 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">1 week left for competition entries! If you plan to enter, you should probably start finalizing your sheets!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">11-Apr-19 08:29 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">2 more days left! If you&#39;re sitting on your submission, now is the time to put it in!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Apr-19 07:09 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Last day for entries! Wow has time flown by. Tomorrow a link will be posted to the poll. Please vote on who your favorite entry is. Please note, you may not vote for your own character.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Apr-19 06:40 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Full disclosure, at least for this contest, I am using Eastern standard Time</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">12-Apr-19 10:13 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Alright <span class="mention">@everyone</span>, submissions are officially closed and voting is now opened! In order to vote, simply head over to <span class="mention">#competition</span>, find the character you want to vote for, and click the heart icon to place your vote. Please note, you only may cast your vote once and cannot vote for your own character.
+Voting will close at 10pm EST on 4/19/19.
+Winners will then be DM&#39;d with instructions on how to claim their prize!</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/449333380312465421/1f8af90bc3396c653748eb70227af4a5.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Kampy#4941" data-user-id="449333380312465421">Kampy</span>
+                <span class="chatlog__timestamp">13-Apr-19 10:49 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown">Voting Q&amp;A:
+
+Q: What happens if there is a tie?
+A: An additional, shorter voting period will occur between the entries with tied votes.</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/186920386451996673/c812dc66b9e5569bc3c861e294c1efdb.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="CeeZee_#8955" data-user-id="186920386451996673">CeeZee_</span>
+                <span class="chatlog__timestamp">18-Jun-19 03:49 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="markdown"><span class="mention">@everyone</span> we now have coloured self assignable roles, excluding brown because fuck brown</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
